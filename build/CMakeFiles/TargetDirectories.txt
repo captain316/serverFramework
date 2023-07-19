@@ -1,0 +1,4 @@
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/rebuild_cache.dir
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/edit_cache.dir
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/test.dir
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/captain.dir

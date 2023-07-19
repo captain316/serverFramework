@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lk/gitRepo/serverFramework/captain/include/log.h
+string
+-
+stdint.h
+-
+memory
+-
+list
+-
+sstream
+-
+iostream
+-
+fstream
+-
+vector
+-
+
+/home/lk/gitRepo/serverFramework/tests/test.cpp
+iostream
+-
+../captain/include/log.h
+/home/lk/gitRepo/serverFramework/captain/include/log.h
+
