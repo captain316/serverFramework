@@ -166,6 +166,33 @@ captain/log.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/log.cpp.s
 .PHONY : captain/log.cpp.s
 
+captain/util.o: captain/util.cpp.o
+
+.PHONY : captain/util.o
+
+# target to build an object file
+captain/util.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/util.cpp.o
+.PHONY : captain/util.cpp.o
+
+captain/util.i: captain/util.cpp.i
+
+.PHONY : captain/util.i
+
+# target to preprocess a source file
+captain/util.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/util.cpp.i
+.PHONY : captain/util.cpp.i
+
+captain/util.s: captain/util.cpp.s
+
+.PHONY : captain/util.s
+
+# target to generate assembly for a file
+captain/util.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/util.cpp.s
+.PHONY : captain/util.cpp.s
+
 tests/test.o: tests/test.cpp.o
 
 .PHONY : tests/test.o
@@ -206,6 +233,9 @@ help:
 	@echo "... captain/log.o"
 	@echo "... captain/log.i"
 	@echo "... captain/log.s"
+	@echo "... captain/util.o"
+	@echo "... captain/util.i"
+	@echo "... captain/util.s"
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"

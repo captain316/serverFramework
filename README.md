@@ -10,3 +10,7 @@ high-performance server development——learning journey
 ### Day2
 
 日志框架初步完成，并进行了编译调试。将代码中的宏定义写法改写为常规写法，抛弃了花哨的技巧，让代码通俗易懂。
+
+### Day3
+
+完善日志系统。

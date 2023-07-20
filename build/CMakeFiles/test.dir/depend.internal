@@ -3,4 +3,6 @@
 
 CMakeFiles/test.dir/tests/test.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/singleton.h
+ /home/lk/gitRepo/serverFramework/captain/include/util.h
  /home/lk/gitRepo/serverFramework/tests/test.cpp

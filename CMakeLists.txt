@@ -6,6 +6,7 @@ set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-de
 
 set(LIB_SRC
     captain/log.cpp
+    captain/util.cpp
     )
 
 add_library(captain SHARED ${LIB_SRC})

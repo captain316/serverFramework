@@ -18,3 +18,6 @@
 
 clean:
 	rm -rf build bin lib
+
+clog:
+	rm log.txt

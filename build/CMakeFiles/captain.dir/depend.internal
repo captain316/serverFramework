@@ -3,4 +3,10 @@
 
 CMakeFiles/captain.dir/captain/log.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/log.cpp
+CMakeFiles/captain.dir/captain/util.cpp.o
+ /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/singleton.h
+ /home/lk/gitRepo/serverFramework/captain/include/util.h
+ /home/lk/gitRepo/serverFramework/captain/util.cpp
