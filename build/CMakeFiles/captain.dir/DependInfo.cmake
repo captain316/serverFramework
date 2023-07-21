@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/lk/gitRepo/serverFramework/captain/config.cpp" "/home/lk/gitRepo/serverFramework/build/CMakeFiles/captain.dir/captain/config.cpp.o"
   "/home/lk/gitRepo/serverFramework/captain/log.cpp" "/home/lk/gitRepo/serverFramework/build/CMakeFiles/captain.dir/captain/log.cpp.o"
   "/home/lk/gitRepo/serverFramework/captain/util.cpp" "/home/lk/gitRepo/serverFramework/build/CMakeFiles/captain.dir/captain/util.cpp.o"
   )
@@ -16,6 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../."
   )
 
 # Targets to which this target links.

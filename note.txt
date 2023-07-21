@@ -1,0 +1,2 @@
+lk@lk:~$ find /usr/local/include/yaml-cpp/ -name "*.h" | xargs grep "LoadFile"
+/usr/local/include/yaml-cpp/node/parse.h:YAML_CPP_API Node LoadFile(const std::string& filename);

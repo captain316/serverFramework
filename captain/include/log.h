@@ -10,8 +10,11 @@
 #include <vector>
 #include <stdarg.h>
 #include <map>
+#include "util.h"
 #include "singleton.h"
-
+//CAPTAIN_LOG_LEVEL(logger, level) 宏用于判断当前日志级别是否满足打印条件，
+//并通过 captain::LogEventWrap 创建一个 captain::LogEvent 对象，
+//并最终通过 .getSS() 获取一个用于日志输出的 std::stringstream 对象，将日志消息输出。
 #define CAPTAIN_LOG_LEVEL(logger, level) \
     if(logger->getLevel() <= level) \
         captain::LogEventWrap(captain::LogEvent::ptr(new captain::LogEvent(logger, level, \
@@ -201,7 +204,7 @@ public:
     Logger::ptr getLogger(const std::string& name);
 
     void init();
-    // Logger::ptr getRoot() const { return m_root;}
+    Logger::ptr getRoot() const { return m_root;}
 
     // std::string toYamlString();
 private:

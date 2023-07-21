@@ -17,7 +17,7 @@
 	fi
 
 clean:
-	rm -rf build bin lib
+	rm -rf build lib
 
 clog:
 	rm log.txt

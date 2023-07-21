@@ -6,5 +6,5 @@ CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-u
 
 CXX_DEFINES = -Dcaptain_EXPORTS
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/lk/gitRepo/serverFramework/. 
 
