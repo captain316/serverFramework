@@ -14,3 +14,7 @@ high-performance server development——learning journey
 ### Day3
 
 完善日志系统。
+
+### Day4
+
+基于yaml-cpp，初步配置了yaml，可以从yml文件中读取基本类型数据。
