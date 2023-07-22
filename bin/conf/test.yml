@@ -37,16 +37,16 @@ system:
 
 class:
     person:
-        name: sylar
+        name: captain
         age: 31
         sex: true
     map:
-        sylar1:
-            name: sylar01
+        captain1:
+            name: captain01
             age: 18
             sex: false
-        sylar2:
-            name: sylar02
+        captain2:
+            name: captain02
             age: 40
             sex: true
     vec_map:

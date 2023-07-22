@@ -1,11 +1,16 @@
 #include "include/config.h"
 
 namespace captain {
-    Config::ConfigVarMap Config::s_datas;
+    // Config::ConfigVarMap Config::s_datas;
+
+    // ConfigVarBase::ptr Config::LookupBase(const std::string& name) {
+    //     auto it = s_datas.find(name);  //在 s_datas 中查找键为 name 的元素。
+    //     return it == s_datas.end() ? nullptr : it->second;
+    // }
 
     ConfigVarBase::ptr Config::LookupBase(const std::string& name) {
-        auto it = s_datas.find(name);  //在 s_datas 中查找键为 name 的元素。
-        return it == s_datas.end() ? nullptr : it->second;
+        auto it = GetDatas().find(name);  //在 s_datas 中查找键为 name 的元素。
+        return it == GetDatas().end() ? nullptr : it->second;
     }
 
     static void ListAllMember(const std::string& prefix,
@@ -53,4 +58,13 @@ namespace captain {
             }
         }
     }
+
+void Config::Visit(std::function<void(ConfigVarBase::ptr)> cb) {
+    ConfigVarMap& m = GetDatas();
+    for(auto it = m.begin();
+            it != m.end(); ++it) {
+        cb(it->second);
+    }
+}
+
 }
