@@ -17,4 +17,8 @@ high-performance server development——learning journey
 
 ### Day4
 
-基于yaml-cpp，初步配置了yaml，可以从yml文件中读取基本类型数据。
+基于yaml-cpp，初步配置了yaml，可以从yml文件中读取基本类型数据。\
+
+### Day5
+
+完善配置系统，支持更复杂的类型，如stl类型、自定义类型。
