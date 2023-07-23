@@ -249,6 +249,7 @@ template<class T, class FromStr = LexicalCast<std::string, T>
 class ConfigVar : public ConfigVarBase {
 public:
     typedef std::shared_ptr<ConfigVar> ptr;
+    //回调函数  配置更改时，通知新值、旧值是什么
     typedef std::function<void (const T& old_value, const T& new_value)> on_change_cb;
 
     ConfigVar(const std::string& name
@@ -288,18 +289,23 @@ public:
             if(v == m_val) {
                 return;
             }
+            //如果新值与当前值不同，它会遍历变更监听器（m_cbs），并调用每个监听器，将旧值和新值作为参数传递。
             for(auto& i : m_cbs) {
-                i.second(m_val, v);
+                i.second(m_val, v); //调用了每个回调函数 将当前值 m_val 和新值 v 作为参数传递给回调函数。
             }
         }
+        //在通知所有监听器后（如果适用），函数通过将m_val设置为新值v来更新配置变量的内部状态。
         m_val = v;
     }
 
     std::string getTypeName() const override { return typeid(T).name();}
 
+    //向配置变量添加变更回调函数 并返回一个唯一的标识符，用于区分每个回调函数。
     uint64_t addListener(on_change_cb cb) {
+        //静态变量在函数调用之间保持其值，这意味着在下一次调用 addListener 时，s_fun_id 的值将保留为上一次的值。
         static uint64_t s_fun_id = 0;
         ++s_fun_id;
+        //将新生成的标识符 s_fun_id 与传入的回调函数 cb 关联，将回调函数存储在 m_cbs 容器中，其中键是标识符，值是回调函数
         m_cbs[s_fun_id] = cb;
         return s_fun_id;
     }
@@ -307,9 +313,10 @@ public:
     void delListener(uint64_t key) {
         m_cbs.erase(key);
     }
-
+    //根据给定的唯一标识符（key）查找对应的回调函数（on_change_cb），并返回该回调函数。
     on_change_cb getListener(uint64_t key) {
         auto it = m_cbs.find(key);
+        //如果 it 等于 m_cbs.end()，说明未找到 it->second 是用于获取迭代器 it 所指向元素的值，即对应的回调函数。
         return it == m_cbs.end() ? nullptr : it->second;
     }
 
