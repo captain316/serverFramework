@@ -22,3 +22,5 @@ high-performance server development——learning journey
 ### Day5
 
 完善配置系统，支持更复杂的类型，如stl类型、自定义类型。
+
+添加了配置系统的事件机制，当一个配置项发生更改的时候，反向通知对应的代码
