@@ -8,3 +8,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/lk/gitRepo/serverFramework/. 
 
+# Custom defines: CMakeFiles/test.dir/tests/test.cpp.o_DEFINES = __FILE__="tests/test.cpp"
+

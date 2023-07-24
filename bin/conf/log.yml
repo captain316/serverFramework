@@ -14,9 +14,3 @@ logs:
             file: system.txt
             formatter: '%d%T%c%T[%p]%T%m%n'
           - type: StdoutLogAppender
-system:
-    port: 9900
-    value: 15
-    int_vec: 
-        - 10
-        - 30

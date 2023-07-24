@@ -376,6 +376,8 @@ public:
 
     static void Visit(std::function<void(ConfigVarBase::ptr)> cb);
 private:
+    //静态方法返回一个静态的局部变量  lookup保证s_datas先被初始化 （lookup使用了这个方法）
+    //避免了因为静态成员变量初始化顺序不一致的问题，引发的错误
     static ConfigVarMap& GetDatas() {
         static ConfigVarMap s_datas;
         return s_datas;

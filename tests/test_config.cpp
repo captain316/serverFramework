@@ -58,12 +58,12 @@ void print_yaml(const YAML::Node& node, int level) {
 void test_yaml() {
     YAML::Node root = YAML::LoadFile("/home/lk/gitRepo/serverFramework/bin/conf/log.yml");
     //CAPTAIN_LOG_INFO(CAPTAIN_LOG_ROOT()) << root;
-    print_yaml(root, 0);
+    //print_yaml(root, 0);
     //CAPTAIN_LOG_INFO(CAPTAIN_LOG_ROOT()) << root.Scalar();
 
-    // CAPTAIN_LOG_INFO(CAPTAIN_LOG_ROOT()) << root["test"].IsDefined();
-    // CAPTAIN_LOG_INFO(CAPTAIN_LOG_ROOT()) << root["logs"].IsDefined();
-    // CAPTAIN_LOG_INFO(CAPTAIN_LOG_ROOT()) << root;
+    CAPTAIN_LOG_INFO(CAPTAIN_LOG_ROOT()) << root["test"].IsDefined();
+    CAPTAIN_LOG_INFO(CAPTAIN_LOG_ROOT()) << root["logs"].IsDefined();
+    CAPTAIN_LOG_INFO(CAPTAIN_LOG_ROOT()) << root;
 }
 
 
@@ -204,10 +204,27 @@ void test_class() {
     CAPTAIN_LOG_INFO(CAPTAIN_LOG_ROOT()) << "after: " << g_person_vec_map->toString();
 }
 
+void test_log() {
+    static captain::Logger::ptr system_log = CAPTAIN_LOG_NAME("system");
+    CAPTAIN_LOG_INFO(system_log) << "hello system" << std::endl;
+    std::cout << captain::LoggerMgr::GetInstance()->toYamlString() << std::endl;
+    YAML::Node root = YAML::LoadFile("/home/lk/gitRepo/serverFramework/bin/conf/log.yml");
+    captain::Config::LoadFromYaml(root);
+    std::cout << "=============" << std::endl;
+    std::cout << captain::LoggerMgr::GetInstance()->toYamlString() << std::endl;
+    std::cout << "=============" << std::endl;
+    std::cout << root << std::endl;
+    CAPTAIN_LOG_INFO(system_log) << "hello system" << std::endl;
+
+    system_log->setFormatter("%d - %m%n");
+    CAPTAIN_LOG_INFO(system_log) << "hello system" << std::endl;
+}
+
 int main(int argc, char** argv) {
     //test_yaml();
     //test_config();
-    test_class();
+    //test_class();
+    test_log();
 
     return 0;
 }

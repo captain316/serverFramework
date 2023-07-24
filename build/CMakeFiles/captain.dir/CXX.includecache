@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/lk/gitRepo/serverFramework/captain/config.cpp
-include/config.h
-/home/lk/gitRepo/serverFramework/captain/include/config.h
-
 /home/lk/gitRepo/serverFramework/captain/include/config.h
 memory
 -
@@ -83,4 +79,20 @@ vector
 -
 string
 -
+
+/home/lk/gitRepo/serverFramework/captain/log.cpp
+include/log.h
+/home/lk/gitRepo/serverFramework/captain/include/log.h
+map
+-
+iostream
+-
+functional
+-
+time.h
+-
+string.h
+-
+include/config.h
+/home/lk/gitRepo/serverFramework/captain/include/config.h
 

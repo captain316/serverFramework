@@ -7,6 +7,7 @@ CMakeFiles/captain.dir/captain/config.cpp.o: ../captain/include/log.h
 CMakeFiles/captain.dir/captain/config.cpp.o: ../captain/include/singleton.h
 CMakeFiles/captain.dir/captain/config.cpp.o: ../captain/include/util.h
 
+CMakeFiles/captain.dir/captain/log.cpp.o: ../captain/include/config.h
 CMakeFiles/captain.dir/captain/log.cpp.o: ../captain/include/log.h
 CMakeFiles/captain.dir/captain/log.cpp.o: ../captain/include/singleton.h
 CMakeFiles/captain.dir/captain/log.cpp.o: ../captain/include/util.h

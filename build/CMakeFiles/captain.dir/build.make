@@ -63,41 +63,41 @@ include CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/log.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/log.cpp.o: ../captain/log.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/captain.dir/captain/log.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/log.cpp.o -c /home/lk/gitRepo/serverFramework/captain/log.cpp
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/log.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/log.cpp.o -c /home/lk/gitRepo/serverFramework/captain/log.cpp
 
 CMakeFiles/captain.dir/captain/log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/log.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/log.cpp > CMakeFiles/captain.dir/captain/log.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/log.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/log.cpp > CMakeFiles/captain.dir/captain/log.cpp.i
 
 CMakeFiles/captain.dir/captain/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/log.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/log.cpp -o CMakeFiles/captain.dir/captain/log.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/log.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/log.cpp -o CMakeFiles/captain.dir/captain/log.cpp.s
 
 CMakeFiles/captain.dir/captain/util.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/util.cpp.o: ../captain/util.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/captain.dir/captain/util.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/util.cpp.o -c /home/lk/gitRepo/serverFramework/captain/util.cpp
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/util.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/util.cpp.o -c /home/lk/gitRepo/serverFramework/captain/util.cpp
 
 CMakeFiles/captain.dir/captain/util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/util.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/util.cpp > CMakeFiles/captain.dir/captain/util.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/util.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/util.cpp > CMakeFiles/captain.dir/captain/util.cpp.i
 
 CMakeFiles/captain.dir/captain/util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/util.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/util.cpp -o CMakeFiles/captain.dir/captain/util.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/util.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/util.cpp -o CMakeFiles/captain.dir/captain/util.cpp.s
 
 CMakeFiles/captain.dir/captain/config.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/config.cpp.o: ../captain/config.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/captain.dir/captain/config.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/config.cpp.o -c /home/lk/gitRepo/serverFramework/captain/config.cpp
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/config.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/config.cpp.o -c /home/lk/gitRepo/serverFramework/captain/config.cpp
 
 CMakeFiles/captain.dir/captain/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/config.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/config.cpp > CMakeFiles/captain.dir/captain/config.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/config.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/config.cpp > CMakeFiles/captain.dir/captain/config.cpp.i
 
 CMakeFiles/captain.dir/captain/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/config.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/config.cpp -o CMakeFiles/captain.dir/captain/config.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/config.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/config.cpp -o CMakeFiles/captain.dir/captain/config.cpp.s
 
 # Object files for target captain
 captain_OBJECTS = \
