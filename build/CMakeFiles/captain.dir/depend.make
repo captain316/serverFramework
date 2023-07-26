@@ -13,6 +13,12 @@ CMakeFiles/captain.dir/captain/log.cpp.o: ../captain/include/singleton.h
 CMakeFiles/captain.dir/captain/log.cpp.o: ../captain/include/util.h
 CMakeFiles/captain.dir/captain/log.cpp.o: ../captain/log.cpp
 
+CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/include/log.h
+CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/include/singleton.h
+CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/include/thread.h
+CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/include/util.h
+CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/thread.cpp
+
 CMakeFiles/captain.dir/captain/util.cpp.o: ../captain/include/log.h
 CMakeFiles/captain.dir/captain/util.cpp.o: ../captain/include/singleton.h
 CMakeFiles/captain.dir/captain/util.cpp.o: ../captain/include/util.h

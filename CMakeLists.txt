@@ -17,6 +17,7 @@ set(LIB_SRC
     captain/log.cpp
     captain/util.cpp
     captain/config.cpp
+    captain/thread.cpp
     )
 
 add_library(captain SHARED ${LIB_SRC})
@@ -24,6 +25,7 @@ force_redefine_file_macro_for_sources(captain) #__FILE__ 它用于强制重新�
 #find_library(YAMLCPP yaml-cpp)
 set(LIBS
         captain
+        pthread
         yaml-cpp)
 
 #message("***", ${LIBS})
@@ -37,6 +39,11 @@ add_executable(test_config tests/test_config.cpp)
 add_dependencies(test_config captain)
 force_redefine_file_macro_for_sources(test_config) #__FILE__
 target_link_libraries(test_config ${LIBS})
+
+add_executable(test_thread tests/test_thread.cpp)
+add_dependencies(test_thread captain)
+force_redefine_file_macro_for_sources(test_thread) #__FILE__
+target_link_libraries(test_thread ${LIBS})
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

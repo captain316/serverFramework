@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "../lib/libcaptain.so"
   "CMakeFiles/captain.dir/captain/config.cpp.o"
   "CMakeFiles/captain.dir/captain/log.cpp.o"
+  "CMakeFiles/captain.dir/captain/thread.cpp.o"
   "CMakeFiles/captain.dir/captain/util.cpp.o"
 )
 
