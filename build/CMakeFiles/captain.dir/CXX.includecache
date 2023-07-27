@@ -43,6 +43,8 @@ memory
 -
 pthread.h
 -
+semaphore.h
+-
 
 /home/lk/gitRepo/serverFramework/captain/include/util.h
 pthread.h

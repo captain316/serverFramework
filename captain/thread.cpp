@@ -10,12 +10,34 @@ static thread_local std::string t_thread_name = "UNKNOW"; //当前线程名称
 //系统日志
 static captain::Logger::ptr g_logger = CAPTAIN_LOG_NAME("system");
 
+Semaphore::Semaphore(uint32_t count) {
+    if(sem_init(&m_semaphore, 0, count)) {
+        throw std::logic_error("sem_init error");
+    }
+}
 
+Semaphore::~Semaphore() {
+    sem_destroy(&m_semaphore);
+}
+
+void Semaphore::wait() {
+    if(sem_wait(&m_semaphore)) {
+        throw std::logic_error("sem_wait error");
+    }
+}
+
+void Semaphore::notify() {
+    if(sem_post(&m_semaphore)) {
+        throw std::logic_error("sem_post error");
+    }
+}
 
 Thread* Thread::GetThis() {
     return t_thread;
 }
 
+/// @brief 
+/// @return 
 const std::string& Thread::GetName() {
     return t_thread_name;
 }
@@ -39,7 +61,7 @@ Thread::Thread(std::function<void()> cb, const std::string& name)
             << " name=" << name;
         throw std::logic_error("pthread_create error");
     }
-
+    m_semaphore.wait();  //等待，等到线程开始run再被唤醒
 }
 
 Thread::~Thread() {
@@ -70,8 +92,8 @@ void* Thread::run(void* arg) {
     std::function<void()> cb;
     //函数里有智能指针的时候，防止它的引用会出现在日志？不会被释放？
     cb.swap(thread->m_cb);
-
-    //thread->m_semaphore.notify();
+    //唤醒
+    thread->m_semaphore.notify();
 
     cb();
     return 0;
