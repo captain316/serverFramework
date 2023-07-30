@@ -33,6 +33,8 @@ functional
 -
 log.h
 /home/lk/gitRepo/serverFramework/captain/include/log.h
+thread.h
+/home/lk/gitRepo/serverFramework/captain/include/thread.h
 
 /home/lk/gitRepo/serverFramework/captain/include/log.h
 string
@@ -59,8 +61,24 @@ util.h
 /home/lk/gitRepo/serverFramework/captain/include/util.h
 singleton.h
 /home/lk/gitRepo/serverFramework/captain/include/singleton.h
+thread.h
+/home/lk/gitRepo/serverFramework/captain/include/thread.h
 
 /home/lk/gitRepo/serverFramework/captain/include/singleton.h
+
+/home/lk/gitRepo/serverFramework/captain/include/thread.h
+thread
+-
+functional
+-
+memory
+-
+pthread.h
+-
+semaphore.h
+-
+atomic
+-
 
 /home/lk/gitRepo/serverFramework/captain/include/util.h
 pthread.h

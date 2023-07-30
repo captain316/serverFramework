@@ -3,6 +3,7 @@
 
 CMakeFiles/test.dir/tests/test.cpp.o: ../captain/include/log.h
 CMakeFiles/test.dir/tests/test.cpp.o: ../captain/include/singleton.h
+CMakeFiles/test.dir/tests/test.cpp.o: ../captain/include/thread.h
 CMakeFiles/test.dir/tests/test.cpp.o: ../captain/include/util.h
 CMakeFiles/test.dir/tests/test.cpp.o: ../tests/test.cpp
 

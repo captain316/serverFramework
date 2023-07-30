@@ -4,6 +4,7 @@
 #include <memory>
 #include <pthread.h>
 #include <semaphore.h>
+#include <atomic>
 
 namespace captain {
 
@@ -144,6 +145,16 @@ private:
     pthread_mutex_t m_mutex;
 };
 
+//用来验证线程安全  什么都不做
+class NullMutex {
+public:
+    typedef ScopedLockImpl<NullMutex> Lock;
+    NullMutex() {}
+    ~NullMutex() {}
+    void lock() {}
+    void unlock() {}
+};
+
 //读写锁
 class RWMutex{
 public:
@@ -173,6 +184,64 @@ private:
     pthread_rwlock_t m_lock;
 };
 
+class NullRWMutex {
+public:
+    typedef ReadScopedLockImpl<NullMutex> ReadLock;
+    typedef WriteScopedLockImpl<NullMutex> WriteLock;
+
+    NullRWMutex() {}
+    ~NullRWMutex() {}
+
+    void rdlock() {}
+    void wrlock() {}
+    void unlock() {}
+};
+
+//优点：等待锁的时间减少，性能提高。
+//缺点：cpu占用率高。（没获得锁会在cpu空跑一段时间）
+//冲突时间很短，适合spinlock。
+class Spinlock {
+public:
+    typedef ScopedLockImpl<Spinlock> Lock;
+    Spinlock() {
+        pthread_spin_init(&m_mutex, 0);
+    }
+
+    ~Spinlock() {
+        pthread_spin_destroy(&m_mutex);
+    }
+
+    void lock() {
+        pthread_spin_lock(&m_mutex);
+    }
+
+    void unlock() {
+        pthread_spin_unlock(&m_mutex);
+    }
+private:
+    pthread_spinlock_t m_mutex;
+};
+
+//CASLock,一种原子锁
+class CASLock {
+public:
+    typedef ScopedLockImpl<CASLock> Lock;
+    CASLock() {
+        m_mutex.clear();
+    }
+    ~CASLock() {
+    }
+
+    void lock() {
+        while(std::atomic_flag_test_and_set_explicit(&m_mutex, std::memory_order_acquire));
+    }
+
+    void unlock() {
+        std::atomic_flag_clear_explicit(&m_mutex, std::memory_order_release);
+    }
+private:
+    volatile std::atomic_flag m_mutex;
+};
 
 class Thread {
 public:

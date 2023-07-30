@@ -1,18 +1,5 @@
 lk@lk:~$ find /usr/local/include/yaml-cpp/ -name "*.h" | xargs grep "LoadFile"
 /usr/local/include/yaml-cpp/node/parse.h:YAML_CPP_API Node LoadFile(const std::string& filename);
 
-logs:
-    - name: root
-      level: info
-      formatter: '%d%T%m%n'
-      appender:
-          - type: FileLogAppender
-            file: log.txt
-          - type: StdoutLogAppender
-    - name: system
-      level: debug
-      formatter: '%d%T%m%n'
-      appender:
-          - type: FileLogAppender
-            path: log.txt
-          - type: StdoutLogAppender
+wc -l filename  查看文件行数
+ls -lh filename  查看文件大小

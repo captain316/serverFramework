@@ -12,8 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <functional>
-
 #include "log.h"
+#include "thread.h"
 
 namespace captain {
 
@@ -248,6 +248,7 @@ template<class T, class FromStr = LexicalCast<std::string, T>
                 ,class ToStr = LexicalCast<T, std::string> >
 class ConfigVar : public ConfigVarBase {
 public:
+    typedef RWMutex RWMutexType;  //配置系统“写少读多” 使用读写锁
     typedef std::shared_ptr<ConfigVar> ptr;
     //回调函数  配置更改时，通知新值、旧值是什么
     typedef std::function<void (const T& old_value, const T& new_value)> on_change_cb;
@@ -262,6 +263,7 @@ public:
     std::string toString() override {
         try {
             //return boost::lexical_cast<std::string>(m_val);
+            RWMutexType::ReadLock lock(m_mutex);
             return ToStr()(m_val);
         } catch (std::exception& e) {
             CAPTAIN_LOG_ERROR(CAPTAIN_LOG_ROOT()) << "ConfigVar::toString exception"
@@ -282,10 +284,14 @@ public:
         return false;
     }
 
-    const T getValue() const { return m_val;}
+    const T getValue() const { 
+        RWMutexType::ReadLock lock(m_mutex);
+        return m_val;
+    }
     //void setValue(const T& v) { m_val = v;}
     void setValue(const T& v) {
         {
+            RWMutexType::ReadLock lock(m_mutex);
             if(v == m_val) {
                 return;
             }
@@ -294,6 +300,7 @@ public:
                 i.second(m_val, v); //调用了每个回调函数 将当前值 m_val 和新值 v 作为参数传递给回调函数。
             }
         }
+        RWMutexType::WriteLock lock(m_mutex);
         //在通知所有监听器后（如果适用），函数通过将m_val设置为新值v来更新配置变量的内部状态。
         m_val = v;
     }
@@ -304,6 +311,7 @@ public:
     uint64_t addListener(on_change_cb cb) {
         //静态变量在函数调用之间保持其值，这意味着在下一次调用 addListener 时，s_fun_id 的值将保留为上一次的值。
         static uint64_t s_fun_id = 0;
+        RWMutexType::WriteLock lock(m_mutex);
         ++s_fun_id;
         //将新生成的标识符 s_fun_id 与传入的回调函数 cb 关联，将回调函数存储在 m_cbs 容器中，其中键是标识符，值是回调函数
         m_cbs[s_fun_id] = cb;
@@ -311,20 +319,24 @@ public:
     }
 
     void delListener(uint64_t key) {
+        RWMutexType::WriteLock lock(m_mutex);
         m_cbs.erase(key);
     }
     //根据给定的唯一标识符（key）查找对应的回调函数（on_change_cb），并返回该回调函数。
     on_change_cb getListener(uint64_t key) {
+        RWMutexType::ReadLock lock(m_mutex);
         auto it = m_cbs.find(key);
         //如果 it 等于 m_cbs.end()，说明未找到 it->second 是用于获取迭代器 it 所指向元素的值，即对应的回调函数。
         return it == m_cbs.end() ? nullptr : it->second;
     }
 
     void clearListener() {
+        RWMutexType::WriteLock lock(m_mutex);
         m_cbs.clear();
     }
 
 private:
+    mutable RWMutexType m_mutex;
     T m_val;
     //变更回调函数组, uint64_t key,要求唯一，一般可以用hash
     std::map<uint64_t, on_change_cb> m_cbs;
@@ -333,10 +345,12 @@ private:
 class Config {
 public:
     typedef std::unordered_map<std::string, ConfigVarBase::ptr> ConfigVarMap;
+    typedef RWMutex RWMutexType;
 
     template<class T>
     static typename ConfigVar<T>::ptr Lookup(const std::string& name,
             const T& default_value, const std::string& description = ""){
+        RWMutexType::WriteLock lock(GetMutex());
         auto it = GetDatas().find(name);
         if(it != GetDatas().end()) {
             auto tmp = std::dynamic_pointer_cast<ConfigVar<T> >(it->second);
@@ -364,6 +378,7 @@ public:
 
     template<class T>
     static typename ConfigVar<T>::ptr Lookup(const std::string& name) {
+        RWMutexType::ReadLock lock(GetMutex());
         auto it = GetDatas().find(name);
         if(it == GetDatas().end()) {
             return nullptr;
@@ -381,6 +396,11 @@ private:
     static ConfigVarMap& GetDatas() {
         static ConfigVarMap s_datas;
         return s_datas;
+    }
+    //静态锁  这个类创建的配置基本都是全局变量，而全局变量没有严格的初始化顺序
+    static RWMutexType& GetMutex() {
+        static RWMutexType s_mutex;
+        return s_mutex;
     }
 };
 

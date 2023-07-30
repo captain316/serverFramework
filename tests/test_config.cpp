@@ -226,5 +226,12 @@ int main(int argc, char** argv) {
     //test_class();
     test_log();
 
+    captain::Config::Visit([](captain::ConfigVarBase::ptr var) {
+        CAPTAIN_LOG_INFO(CAPTAIN_LOG_ROOT()) << "name=" << var->getName()
+                    << " description=" << var->getDescription()
+                    << " typename=" << var->getTypeName()
+                    << " value=" << var->toString();
+    });
+
     return 0;
 }

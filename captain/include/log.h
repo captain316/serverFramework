@@ -12,6 +12,7 @@
 #include <map>
 #include "util.h"
 #include "singleton.h"
+#include "thread.h"
 //CAPTAIN_LOG_LEVEL(logger, level) 宏用于判断当前日志级别是否满足打印条件，
 //并通过 captain::LogEventWrap 创建一个 captain::LogEvent 对象，
 //并最终通过 .getSS() 获取一个用于日志输出的 std::stringstream 对象，将日志消息输出。
@@ -140,19 +141,25 @@ class LogAppender{
 friend class Logger;
 public:
     typedef std::shared_ptr<LogAppender> ptr;
+    //MutexType是为了方便测试不同的锁，如真锁Mutex和假锁NullRWMutex、NullMutex
+    //typedef Mutex MutexType;  //Mutex性能低
+    //typedef NullMutex MutexType;  //测试假锁 
+    typedef Spinlock MutexType;  //Spinlock性能高，但cpu占用也高。
+    //typedef CASLock MutexType;
     virtual ~LogAppender(){}
 
     virtual void log(std::shared_ptr<Logger> logger, LogLevel::Level level, LogEvent::ptr event) = 0;
-    virtual std::string toYamlString() = 0;
+    virtual std::string toYamlString() = 0;  //用到了format  需要加锁。
 
     void setFormatter (LogFormatter::ptr val);
     LogFormatter::ptr getFormatter();
 
-    LogLevel::Level getLevel() const { return m_level;}
+    LogLevel::Level getLevel() const { return m_level;} //基础/原子类型 可加可不加锁
     void setLevel(LogLevel::Level val) { m_level = val;}
 protected:
     LogLevel::Level m_level = LogLevel::DEBUG;
     bool m_hasFormatter = false;
+    MutexType m_mutex;   //锁
     LogFormatter::ptr m_formatter;
 };
 
@@ -161,7 +168,11 @@ class Logger : public std::enable_shared_from_this<Logger> {
 friend class LoggerManager;
 public:
     typedef std::shared_ptr<Logger> ptr;
-
+    //MutexType是为了方便测试不同的锁，如真锁Mutex和假锁NullRWMutex、NullMutex
+    //typedef Mutex MutexType;  //Mutex性能低
+    //typedef NullMutex MutexType;  //测试假锁
+    typedef Spinlock MutexType;  //Spinlock性能高，但cpu占用也高。
+    //typedef CASLock MutexType;
     Logger(const std::string& name = "root");
     void log(LogLevel::Level level, LogEvent::ptr event);
 
@@ -186,6 +197,7 @@ public:
 private:
     std::string m_name;     //日志名称
     LogLevel::Level m_level;//日志级别
+    MutexType m_mutex;
     std::list<LogAppender::ptr> m_appenders; //日志集合
     LogFormatter::ptr m_formatter;
     Logger::ptr m_root;
@@ -212,11 +224,16 @@ public:
 private:
     std::string m_filename;
     std::ofstream m_filestream;
+    uint64_t m_lastTime = 0;  //用来检查输出文件是否被删除的一个信号  防止内存没释放 资源被占用
 };
 
 class LoggerManager {
 public:
-    //typedef Spinlock MutexType;
+    //MutexType是为了方便测试不同的锁，如真锁Mutex和假锁NullRWMutex、NullMutex
+    //typedef Mutex MutexType;  //Mutex性能低。
+    //typedef NullMutex MutexType;  //测试假锁。输出日志可能会串行
+    typedef Spinlock MutexType;  //Spinlock性能高，但cpu占用也高。
+    //typedef CASLock MutexType;
     LoggerManager();
     Logger::ptr getLogger(const std::string& name);
 
@@ -225,6 +242,7 @@ public:
 
     std::string toYamlString();
 private:
+    MutexType m_mutex;
     std::map<std::string, Logger::ptr> m_loggers;
     Logger::ptr m_root;
 };

@@ -9,6 +9,7 @@ namespace captain {
     // }
 
     ConfigVarBase::ptr Config::LookupBase(const std::string& name) {
+        RWMutexType::ReadLock lock(GetMutex());
         auto it = GetDatas().find(name);  //在 s_datas 中查找键为 name 的元素。
         return it == GetDatas().end() ? nullptr : it->second;
     }
@@ -60,6 +61,7 @@ namespace captain {
     }
 
 void Config::Visit(std::function<void(ConfigVarBase::ptr)> cb) {
+    RWMutexType::ReadLock lock(GetMutex());
     ConfigVarMap& m = GetDatas();
     for(auto it = m.begin();
             it != m.end(); ++it) {
