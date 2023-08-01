@@ -3,7 +3,9 @@
 
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: ../captain/include/captain.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: ../captain/include/config.h
+CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: ../captain/include/fiber.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: ../captain/include/log.h
+CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: ../captain/include/macro.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: ../captain/include/singleton.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: ../captain/include/thread.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: ../captain/include/util.h

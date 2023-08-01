@@ -4,7 +4,9 @@
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/captain.h
  /home/lk/gitRepo/serverFramework/captain/include/config.h
+ /home/lk/gitRepo/serverFramework/captain/include/fiber.h
  /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/macro.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
  /home/lk/gitRepo/serverFramework/captain/include/util.h
