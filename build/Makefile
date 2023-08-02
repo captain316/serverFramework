@@ -166,6 +166,19 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
+# Target rules for targets named test_fiber
+
+# Build rule for target.
+test_fiber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_fiber
+.PHONY : test_fiber
+
+# fast build rule for target.
+test_fiber/fast:
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/build
+.PHONY : test_fiber/fast
+
+#=============================================================================
 # Target rules for targets named captain
 
 # Build rule for target.
@@ -205,6 +218,33 @@ captain/config.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/config.cpp.s
 .PHONY : captain/config.cpp.s
 
+captain/fiber.o: captain/fiber.cpp.o
+
+.PHONY : captain/fiber.o
+
+# target to build an object file
+captain/fiber.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/fiber.cpp.o
+.PHONY : captain/fiber.cpp.o
+
+captain/fiber.i: captain/fiber.cpp.i
+
+.PHONY : captain/fiber.i
+
+# target to preprocess a source file
+captain/fiber.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/fiber.cpp.i
+.PHONY : captain/fiber.cpp.i
+
+captain/fiber.s: captain/fiber.cpp.s
+
+.PHONY : captain/fiber.s
+
+# target to generate assembly for a file
+captain/fiber.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/fiber.cpp.s
+.PHONY : captain/fiber.cpp.s
+
 captain/log.o: captain/log.cpp.o
 
 .PHONY : captain/log.o
@@ -231,6 +271,33 @@ captain/log.s: captain/log.cpp.s
 captain/log.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/log.cpp.s
 .PHONY : captain/log.cpp.s
+
+captain/scheduler.o: captain/scheduler.cpp.o
+
+.PHONY : captain/scheduler.o
+
+# target to build an object file
+captain/scheduler.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/scheduler.cpp.o
+.PHONY : captain/scheduler.cpp.o
+
+captain/scheduler.i: captain/scheduler.cpp.i
+
+.PHONY : captain/scheduler.i
+
+# target to preprocess a source file
+captain/scheduler.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/scheduler.cpp.i
+.PHONY : captain/scheduler.cpp.i
+
+captain/scheduler.s: captain/scheduler.cpp.s
+
+.PHONY : captain/scheduler.s
+
+# target to generate assembly for a file
+captain/scheduler.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/scheduler.cpp.s
+.PHONY : captain/scheduler.cpp.s
 
 captain/thread.o: captain/thread.cpp.o
 
@@ -340,6 +407,33 @@ tests/test_config.cpp.s:
 	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cpp.s
 .PHONY : tests/test_config.cpp.s
 
+tests/test_fiber.o: tests/test_fiber.cpp.o
+
+.PHONY : tests/test_fiber.o
+
+# target to build an object file
+tests/test_fiber.cpp.o:
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o
+.PHONY : tests/test_fiber.cpp.o
+
+tests/test_fiber.i: tests/test_fiber.cpp.i
+
+.PHONY : tests/test_fiber.i
+
+# target to preprocess a source file
+tests/test_fiber.cpp.i:
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.i
+.PHONY : tests/test_fiber.cpp.i
+
+tests/test_fiber.s: tests/test_fiber.cpp.s
+
+.PHONY : tests/test_fiber.s
+
+# target to generate assembly for a file
+tests/test_fiber.cpp.s:
+	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.s
+.PHONY : tests/test_fiber.cpp.s
+
 tests/test_thread.o: tests/test_thread.cpp.o
 
 .PHONY : tests/test_thread.o
@@ -406,13 +500,20 @@ help:
 	@echo "... edit_cache"
 	@echo "... test_thread"
 	@echo "... test"
+	@echo "... test_fiber"
 	@echo "... captain"
 	@echo "... captain/config.o"
 	@echo "... captain/config.i"
 	@echo "... captain/config.s"
+	@echo "... captain/fiber.o"
+	@echo "... captain/fiber.i"
+	@echo "... captain/fiber.s"
 	@echo "... captain/log.o"
 	@echo "... captain/log.i"
 	@echo "... captain/log.s"
+	@echo "... captain/scheduler.o"
+	@echo "... captain/scheduler.i"
+	@echo "... captain/scheduler.s"
 	@echo "... captain/thread.o"
 	@echo "... captain/thread.i"
 	@echo "... captain/thread.s"
@@ -425,6 +526,9 @@ help:
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
+	@echo "... tests/test_fiber.o"
+	@echo "... tests/test_fiber.i"
+	@echo "... tests/test_fiber.s"
 	@echo "... tests/test_thread.o"
 	@echo "... tests/test_thread.i"
 	@echo "... tests/test_thread.s"

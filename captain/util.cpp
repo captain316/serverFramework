@@ -14,8 +14,7 @@ pid_t GetThreadId() {
 }
 
 uint32_t GetFiberId() {
-    return 0;
-    //return captain::Fiber::GetFiberId();
+    return captain::Fiber::GetFiberId();
 }
 //获取当前线程的函数调用栈信息，并将栈帧信息存储在一个 std::vector<std::string> 类型的变量 bt 中
 void Backtrace(std::vector<std::string>& bt, int size, int skip) {

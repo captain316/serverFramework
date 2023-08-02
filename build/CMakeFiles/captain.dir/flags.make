@@ -8,11 +8,15 @@ CXX_DEFINES = -Dcaptain_EXPORTS
 
 CXX_INCLUDES = -I/home/lk/gitRepo/serverFramework/. 
 
-# Custom defines: CMakeFiles/captain.dir/captain/log.cpp.o_DEFINES = __FILE__="captain/log.cpp"
-
-# Custom defines: CMakeFiles/captain.dir/captain/util.cpp.o_DEFINES = __FILE__="captain/util.cpp"
-
 # Custom defines: CMakeFiles/captain.dir/captain/config.cpp.o_DEFINES = __FILE__="captain/config.cpp"
 
+# Custom defines: CMakeFiles/captain.dir/captain/fiber.cpp.o_DEFINES = __FILE__="captain/fiber.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/log.cpp.o_DEFINES = __FILE__="captain/log.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/scheduler.cpp.o_DEFINES = __FILE__="captain/scheduler.cpp"
+
 # Custom defines: CMakeFiles/captain.dir/captain/thread.cpp.o_DEFINES = __FILE__="captain/thread.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/util.cpp.o_DEFINES = __FILE__="captain/util.cpp"
 

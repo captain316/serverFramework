@@ -1,0 +1,1 @@
+/usr/bin/g++   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations   CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o  -o ../bin/test_fiber   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib:/home/lk/gitRepo/serverFramework/lib ../lib/libcaptain.so -lpthread -lyaml-cpp 
