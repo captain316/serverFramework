@@ -44,6 +44,7 @@ uint64_t Fiber::GetFiberId() {
 
 //默认构造函数其实就是这个线程的主协程，没有参数。
 Fiber::Fiber() {
+    //CAPTAIN_LOG_DEBUG(g_logger) << "====Fiber::Fiber()无参====";
     m_state = EXEC;
     SetThis(this);
 
@@ -60,6 +61,7 @@ Fiber::Fiber() {
 Fiber::Fiber(std::function<void()> cb, size_t stacksize, bool use_caller)
     :m_id(++s_fiber_id)
     ,m_cb(cb) {
+    //CAPTAIN_LOG_DEBUG(g_logger) << "====Fiber::Fiber有参====" ;
     ++s_fiber_count;
     //m_stacksize 初始化为传入的 stacksize，如果 stacksize 为0，则使用全局配置 g_fiber_stack_size 的值作为栈大小。
     m_stacksize = stacksize ? stacksize : g_fiber_stack_size->getValue();
@@ -180,6 +182,7 @@ void Fiber::swapOut() {
     if(swapcontext(&m_ctx, &t_threadFiber->m_ctx)) {
         CAPTAIN_ASSERT2(false, "swapcontext");
     }
+    //CAPTAIN_LOG_DEBUG(g_logger) << "====swapOut()====";
 }
 
 //设置当前协程
@@ -231,6 +234,7 @@ void Fiber::MainFunc() {
     CAPTAIN_ASSERT(cur); //确保已成功获取当前协程。
     try { //如果没有异常抛出，代码将会执行 try 块中的内容
         cur->m_cb(); //执行协程的主要逻辑，即协程函数。
+        //CAPTAIN_LOG_DEBUG(g_logger) << "====cur->m_cb()====";
         cur->m_cb = nullptr;// 当协程函数执行完毕后，将其回调函数指针置空，确保在协程函数返回后不再执行该函数。
         cur->m_state = TERM; //协程已经正常终止
     } catch (std::exception& ex) {

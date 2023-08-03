@@ -9,7 +9,7 @@ void run_in_fiber() {
     captain::Fiber::YieldToHold();
 }
 
-/* void test_fiber() {
+void test_fiber() {
     CAPTAIN_LOG_INFO(g_logger) << "main begin -1";
     {
         captain::Fiber::GetThis();
@@ -22,20 +22,11 @@ void run_in_fiber() {
         fiber->swapIn();
     }
     CAPTAIN_LOG_INFO(g_logger) << "main after end2";
-} */
+}
 
 int main(int argc, char** argv) {
-    captain::Fiber::GetThis();
-    CAPTAIN_LOG_INFO(g_logger) << "main begin";
-    captain::Fiber::ptr fiber(new captain::Fiber(run_in_fiber));
-    fiber->swapIn();
-    CAPTAIN_LOG_INFO(g_logger) << "main after swapIn";
-    fiber->swapIn();
-    CAPTAIN_LOG_INFO(g_logger) << "main after end";
-    //fiber->swapIn();
 
-
-/*     captain::Thread::SetName("main");
+    captain::Thread::SetName("main");
 
     std::vector<captain::Thread::ptr> thrs;
     for(int i = 0; i < 3; ++i) {
@@ -44,6 +35,6 @@ int main(int argc, char** argv) {
     }
     for(auto i : thrs) {
         i->join();
-    } */
+    }
     return 0;
 }

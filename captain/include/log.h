@@ -20,8 +20,7 @@
     if(logger->getLevel() <= level) \
         captain::LogEventWrap(captain::LogEvent::ptr(new captain::LogEvent(logger, level, \
                         __FILE__, __LINE__, 0, captain::GetThreadId(),\
-                captain::GetFiberId(), time(0)))).getSS()
-                //captain::GetFiberId(), time(0), captain::Thread::GetName()))).getSS()
+                captain::GetFiberId(), time(0), captain::Thread::GetName()))).getSS()
 
 #define CAPTAIN_LOG_DEBUG(logger) CAPTAIN_LOG_LEVEL(logger, captain::LogLevel::DEBUG)
 #define CAPTAIN_LOG_INFO(logger) CAPTAIN_LOG_LEVEL(logger, captain::LogLevel::INFO)
@@ -33,8 +32,7 @@
     if(logger->getLevel() <= level) \
         captain::LogEventWrap(captain::LogEvent::ptr(new captain::LogEvent(logger, level, \
                         __FILE__, __LINE__, 0, captain::GetThreadId(),\
-                captain::GetFiberId(), time(0)))).getEvent()->format(fmt, __VA_ARGS__)
-                //captain::GetFiberId(), time(0), captain::Thread::GetName()))).getEvent()->format(fmt, __VA_ARGS__)
+                captain::GetFiberId(), time(0), captain::Thread::GetName()))).getEvent()->format(fmt, __VA_ARGS__)
 
 #define CAPTAIN_LOG_FMT_DEBUG(logger, fmt, ...) CAPTAIN_LOG_FMT_LEVEL(logger, captain::LogLevel::DEBUG, fmt, __VA_ARGS__)
 #define CAPTAIN_LOG_FMT_INFO(logger, fmt, ...)  CAPTAIN_LOG_FMT_LEVEL(logger, captain::LogLevel::INFO, fmt, __VA_ARGS__)
@@ -71,7 +69,8 @@ class LogEvent{
 public:
     typedef std::shared_ptr<LogEvent> ptr;
     LogEvent(std::shared_ptr<Logger> logger, LogLevel::Level level, const char* file, int32_t m_line, uint32_t elapse,
-            uint32_t thread_id, uint32_t fiber_id, uint64_t time);
+            uint32_t thread_id, uint32_t fiber_id, uint64_t time
+            ,const std::string& thread_name);
 
     const char* getFile() const { return m_file;}
     int32_t getLine() const { return m_line;}
