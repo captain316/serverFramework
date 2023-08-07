@@ -144,6 +144,7 @@ void Fiber::reset(std::function<void()> cb) {
     m_state = INIT; //表示协程已经重置为初始状态，可以再次执行。
 }
 
+// 强行把当前协程切换为目标执行协程
 void Fiber::call() {
     SetThis(this);
     m_state = EXEC;
@@ -167,23 +168,38 @@ void Fiber::swapIn() {
     CAPTAIN_ASSERT(m_state != EXEC); //确保当前协程不处于执行状态，避免重复切换。
     m_state = EXEC; //将当前协程的状态设置为执行状态（EXEC）。
     //swapcontext 函数的作用是实现上下文之间的切换，将执行流程从主协程切换到当前协程，同时保存主协程的上下文，以便后续切换回主协程时恢复执行。
-    //if(swapcontext(&Scheduler::GetMainFiber()->m_ctx, &m_ctx)) {
-    if(swapcontext(&t_threadFiber->m_ctx, &m_ctx)) {
+    if(swapcontext(&Scheduler::GetMainFiber()->m_ctx, &m_ctx)) {
+    //if(swapcontext(&t_threadFiber->m_ctx, &m_ctx)) {
         CAPTAIN_ASSERT2(false, "swapcontext");
     }
 }
 
-//切换到后台执行
+/* //切换到后台执行
 //swapOut 从【当前协程】切换到【线程的主协程】
 void Fiber::swapOut() {
     SetThis(Scheduler::GetMainFiber());
     //当前协程的上下文（保存在 m_ctx）切换回主协程的上下文（保存在 Scheduler::GetMainFiber()->m_ctx）
-    //if(swapcontext(&m_ctx, &Scheduler::GetMainFiber()->m_ctx)) {
-    if(swapcontext(&m_ctx, &t_threadFiber->m_ctx)) {
+    if(swapcontext(&m_ctx, &Scheduler::GetMainFiber()->m_ctx)) {
+    //if(swapcontext(&m_ctx, &t_threadFiber->m_ctx)) {
         CAPTAIN_ASSERT2(false, "swapcontext");
     }
     //CAPTAIN_LOG_DEBUG(g_logger) << "====swapOut()====";
+} */
+
+void Fiber::swapOut() {
+    if(t_fiber != Scheduler::GetMainFiber()){
+        SetThis(Scheduler::GetMainFiber());
+        if(swapcontext(&m_ctx, &Scheduler::GetMainFiber()->m_ctx)) {
+            CAPTAIN_ASSERT2(false, "swapcontext");
+        }
+    }else {
+        SetThis(t_threadFiber.get());
+        if(swapcontext(&m_ctx, &t_threadFiber->m_ctx)) {
+            CAPTAIN_ASSERT2(false, "swapcontext");
+        }
+    }
 }
+
 
 //设置当前协程
 //静态成员函数，用于将当前协程设置为线程局部存储中的当前协程指针 t_fiber。
@@ -191,7 +207,7 @@ void Fiber::SetThis(Fiber* f) {
     t_fiber = f;
 }
 
-//返回当前协程
+//返回当前协程，如果该线程没有协程，GetThis()会初始化一个主协程
 Fiber::ptr Fiber::GetThis() {
     /* 
     如果 t_fiber 不为空，则说明当前有正在执行的协程，直接返回当前协程的 shared_ptr（共享智能指针），

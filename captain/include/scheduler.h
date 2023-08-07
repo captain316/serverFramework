@@ -56,9 +56,9 @@ public:
     }
 protected:
     virtual void tickle();
-    void run();
-    virtual bool stopping();
-    virtual void idle();
+    void run();  //协程调度器真正的执行函数
+    virtual bool stopping(); //子类实现
+    virtual void idle();//协程调度器没任务做时又不能让线程终止，就执行这个idle()函数。
 
     void setThis();
 
@@ -112,17 +112,18 @@ private:
 private:
     MutexType m_mutex;
     std::vector<Thread::ptr> m_threads; //线程池
-    std::list<FiberAndThread> m_fibers; //存储要调度的任务（协程或回调函数）以及指定它们执行的线程。
-    Fiber::ptr m_rootFiber;
+    std::list<FiberAndThread> m_fibers; //协程队列 存储要调度的任务（协程或回调函数）以及指定它们执行的线程。
+    Fiber::ptr m_rootFiber;  //主协程
     std::string m_name;
 protected:
-    std::vector<int> m_threadIds;
-    size_t m_threadCount = 0;
-    std::atomic<size_t> m_activeThreadCount = {0};
-    std::atomic<size_t> m_idleThreadCount = {0};
-    bool m_stopping = true;
+    std::vector<int> m_threadIds; //存储线程id
+    size_t m_threadCount = 0;  //线程数量
+    std::atomic<size_t> m_activeThreadCount = {0}; //活跃线程数量
+    std::atomic<size_t> m_idleThreadCount = {0}; //空闲线程数量
+    //执行状态
+    bool m_stopping = true; 
     bool m_autoStop = false;
-    int m_rootThread = 0;
+    int m_rootThread = 0; //主线程id  （use_caller id）
 };
 
 }

@@ -146,7 +146,7 @@ vector
 string
 -
 
-/home/lk/gitRepo/serverFramework/tests/test_fiber.cpp
+/home/lk/gitRepo/serverFramework/tests/test_scheduler.cpp
 captain/include/captain.h
 /home/lk/gitRepo/serverFramework/tests/captain/include/captain.h
 

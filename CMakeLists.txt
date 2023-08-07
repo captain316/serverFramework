@@ -57,5 +57,10 @@ add_dependencies(test_fiber captain)
 force_redefine_file_macro_for_sources(test_fiber) #__FILE__
 target_link_libraries(test_fiber ${LIBS})
 
+add_executable(test_scheduler tests/test_scheduler.cpp)
+add_dependencies(test_scheduler captain)
+force_redefine_file_macro_for_sources(test_scheduler) #__FILE__
+target_link_libraries(test_scheduler ${LIBS})
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
