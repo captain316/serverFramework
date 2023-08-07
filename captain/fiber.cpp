@@ -174,7 +174,7 @@ void Fiber::swapIn() {
     }
 }
 
-/* //切换到后台执行
+//切换到后台执行
 //swapOut 从【当前协程】切换到【线程的主协程】
 void Fiber::swapOut() {
     SetThis(Scheduler::GetMainFiber());
@@ -184,9 +184,9 @@ void Fiber::swapOut() {
         CAPTAIN_ASSERT2(false, "swapcontext");
     }
     //CAPTAIN_LOG_DEBUG(g_logger) << "====swapOut()====";
-} */
+}
 
-void Fiber::swapOut() {
+/* void Fiber::swapOut() {
     if(t_fiber != Scheduler::GetMainFiber()){
         SetThis(Scheduler::GetMainFiber());
         if(swapcontext(&m_ctx, &Scheduler::GetMainFiber()->m_ctx)) {
@@ -198,7 +198,7 @@ void Fiber::swapOut() {
             CAPTAIN_ASSERT2(false, "swapcontext");
         }
     }
-}
+} */
 
 
 //设置当前协程
