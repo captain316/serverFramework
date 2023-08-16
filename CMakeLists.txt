@@ -16,9 +16,11 @@ link_directories(/usr/local/lib)
 set(LIB_SRC
     captain/config.cpp
     captain/fiber.cpp
+    captain/iomanager.cpp
     captain/log.cpp
     captain/scheduler.cpp
     captain/thread.cpp
+    captain/timer.cpp
     captain/util.cpp
     )
 
@@ -61,6 +63,11 @@ add_executable(test_scheduler tests/test_scheduler.cpp)
 add_dependencies(test_scheduler captain)
 force_redefine_file_macro_for_sources(test_scheduler) #__FILE__
 target_link_libraries(test_scheduler ${LIBS})
+
+add_executable(test_iomanager tests/test_iomanager.cpp)
+add_dependencies(test_iomanager captain)
+force_redefine_file_macro_for_sources(test_iomanager) #__FILE__
+target_link_libraries(test_iomanager ${LIBS})
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

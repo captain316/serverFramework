@@ -1,0 +1,1 @@
+/usr/bin/g++   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations   CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o  -o ../bin/test_iomanager   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib:/home/lk/gitRepo/serverFramework/lib ../lib/libcaptain.so -lpthread -lyaml-cpp 

@@ -114,6 +114,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_iomanager
+
+# Build rule for target.
+test_iomanager: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_iomanager
+.PHONY : test_iomanager
+
+# fast build rule for target.
+test_iomanager/fast:
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/build
+.PHONY : test_iomanager/fast
+
+#=============================================================================
 # Target rules for targets named test_scheduler
 
 # Build rule for target.
@@ -258,6 +271,33 @@ captain/fiber.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/fiber.cpp.s
 .PHONY : captain/fiber.cpp.s
 
+captain/iomanager.o: captain/iomanager.cpp.o
+
+.PHONY : captain/iomanager.o
+
+# target to build an object file
+captain/iomanager.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/iomanager.cpp.o
+.PHONY : captain/iomanager.cpp.o
+
+captain/iomanager.i: captain/iomanager.cpp.i
+
+.PHONY : captain/iomanager.i
+
+# target to preprocess a source file
+captain/iomanager.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/iomanager.cpp.i
+.PHONY : captain/iomanager.cpp.i
+
+captain/iomanager.s: captain/iomanager.cpp.s
+
+.PHONY : captain/iomanager.s
+
+# target to generate assembly for a file
+captain/iomanager.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/iomanager.cpp.s
+.PHONY : captain/iomanager.cpp.s
+
 captain/log.o: captain/log.cpp.o
 
 .PHONY : captain/log.o
@@ -338,6 +378,33 @@ captain/thread.s: captain/thread.cpp.s
 captain/thread.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/thread.cpp.s
 .PHONY : captain/thread.cpp.s
+
+captain/timer.o: captain/timer.cpp.o
+
+.PHONY : captain/timer.o
+
+# target to build an object file
+captain/timer.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/timer.cpp.o
+.PHONY : captain/timer.cpp.o
+
+captain/timer.i: captain/timer.cpp.i
+
+.PHONY : captain/timer.i
+
+# target to preprocess a source file
+captain/timer.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/timer.cpp.i
+.PHONY : captain/timer.cpp.i
+
+captain/timer.s: captain/timer.cpp.s
+
+.PHONY : captain/timer.s
+
+# target to generate assembly for a file
+captain/timer.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/timer.cpp.s
+.PHONY : captain/timer.cpp.s
 
 captain/util.o: captain/util.cpp.o
 
@@ -447,6 +514,33 @@ tests/test_fiber.cpp.s:
 	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.s
 .PHONY : tests/test_fiber.cpp.s
 
+tests/test_iomanager.o: tests/test_iomanager.cpp.o
+
+.PHONY : tests/test_iomanager.o
+
+# target to build an object file
+tests/test_iomanager.cpp.o:
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o
+.PHONY : tests/test_iomanager.cpp.o
+
+tests/test_iomanager.i: tests/test_iomanager.cpp.i
+
+.PHONY : tests/test_iomanager.i
+
+# target to preprocess a source file
+tests/test_iomanager.cpp.i:
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.i
+.PHONY : tests/test_iomanager.cpp.i
+
+tests/test_iomanager.s: tests/test_iomanager.cpp.s
+
+.PHONY : tests/test_iomanager.s
+
+# target to generate assembly for a file
+tests/test_iomanager.cpp.s:
+	$(MAKE) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.s
+.PHONY : tests/test_iomanager.cpp.s
+
 tests/test_scheduler.o: tests/test_scheduler.cpp.o
 
 .PHONY : tests/test_scheduler.o
@@ -534,6 +628,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test_iomanager"
 	@echo "... test_scheduler"
 	@echo "... rebuild_cache"
 	@echo "... test_util"
@@ -549,6 +644,9 @@ help:
 	@echo "... captain/fiber.o"
 	@echo "... captain/fiber.i"
 	@echo "... captain/fiber.s"
+	@echo "... captain/iomanager.o"
+	@echo "... captain/iomanager.i"
+	@echo "... captain/iomanager.s"
 	@echo "... captain/log.o"
 	@echo "... captain/log.i"
 	@echo "... captain/log.s"
@@ -558,6 +656,9 @@ help:
 	@echo "... captain/thread.o"
 	@echo "... captain/thread.i"
 	@echo "... captain/thread.s"
+	@echo "... captain/timer.o"
+	@echo "... captain/timer.i"
+	@echo "... captain/timer.s"
 	@echo "... captain/util.o"
 	@echo "... captain/util.i"
 	@echo "... captain/util.s"
@@ -570,6 +671,9 @@ help:
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"
+	@echo "... tests/test_iomanager.o"
+	@echo "... tests/test_iomanager.i"
+	@echo "... tests/test_iomanager.s"
 	@echo "... tests/test_scheduler.o"
 	@echo "... tests/test_scheduler.i"
 	@echo "... tests/test_scheduler.s"

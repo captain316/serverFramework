@@ -57,12 +57,14 @@ std::string BacktraceToString(int size, int skip, const std::string& prefix) {
     return ss.str();
 }
 
+//获取当前时间的函数，返回以【毫秒】为单位的时间戳
 uint64_t GetCurrentMS() {
     struct timeval tv;
     gettimeofday(&tv, NULL);
     return tv.tv_sec * 1000ul  + tv.tv_usec / 1000;
 }
 
+//获取当前时间的函数，返回以【微秒】为单位的时间戳
 uint64_t GetCurrentUS() {
     struct timeval tv;
     gettimeofday(&tv, NULL);
