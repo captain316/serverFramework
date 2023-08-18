@@ -316,7 +316,7 @@ void IOManager::idle() {
         int rt = 0;
         do {
             static const int MAX_TIMEOUT = 3000; //用于限制最大的等待时间
-            if(next_timeout != ~0ull) {
+            if(next_timeout != ~0ull) { //有超时时间
                 //取较小的那个值作为等待时间。
                 next_timeout = (int)next_timeout > MAX_TIMEOUT
                                 ? MAX_TIMEOUT : next_timeout;

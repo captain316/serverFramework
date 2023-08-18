@@ -12,7 +12,9 @@ friend class TimerManager;
 public:
     typedef std::shared_ptr<Timer> ptr;
     bool cancel();
+    //重新设置执行时间
     bool refresh();
+    //重置时间间隔
     bool reset(uint64_t ms, bool from_now);
 private:
     Timer(uint64_t ms, std::function<void()> cb,
@@ -44,7 +46,9 @@ public:
     Timer::ptr addConditionTimer(uint64_t ms, std::function<void()> cb
                         ,std::weak_ptr<void> weak_cond
                         ,bool recurring = false);
+    //获取下一个定时器的执行时间
     uint64_t getNextTimer();
+    //返回需要执行的回调函数（已经超过了等待时间的那些函数）在iomanager放到scheduler中执行
     void listExpiredCb(std::vector<std::function<void()> >& cbs);
     bool hasTimer();
 protected:
@@ -53,8 +57,10 @@ protected:
        需要马上唤醒回来，重新设置一个时间
     */
     virtual void onTimerInsertedAtFront() = 0;
+    //封装addTimer
     void addTimer(Timer::ptr val, RWMutexType::WriteLock& lock);
 private:
+    //检测系统时间
     bool detectClockRollover(uint64_t now_ms);
 private:
     RWMutexType m_mutex;
@@ -62,6 +68,7 @@ private:
     //其实set容器有默认排序，但默认地址比较，但对我们而言没意义 
     std::set<Timer::ptr, Timer::Comparator> m_timers;
     bool m_tickled = false;
+    //上一个执行的时间
     uint64_t m_previouseTime = 0;
 };
 
