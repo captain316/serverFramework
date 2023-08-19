@@ -73,9 +73,22 @@ CMakeFiles/captain.dir/captain/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/config.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/config.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/config.cpp -o CMakeFiles/captain.dir/captain/config.cpp.s
 
+CMakeFiles/captain.dir/captain/fd_manager.cpp.o: CMakeFiles/captain.dir/flags.make
+CMakeFiles/captain.dir/captain/fd_manager.cpp.o: ../captain/fd_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/captain.dir/captain/fd_manager.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/fd_manager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/fd_manager.cpp.o -c /home/lk/gitRepo/serverFramework/captain/fd_manager.cpp
+
+CMakeFiles/captain.dir/captain/fd_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/fd_manager.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/fd_manager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/fd_manager.cpp > CMakeFiles/captain.dir/captain/fd_manager.cpp.i
+
+CMakeFiles/captain.dir/captain/fd_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/fd_manager.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/fd_manager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/fd_manager.cpp -o CMakeFiles/captain.dir/captain/fd_manager.cpp.s
+
 CMakeFiles/captain.dir/captain/fiber.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/fiber.cpp.o: ../captain/fiber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/captain.dir/captain/fiber.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/captain.dir/captain/fiber.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/fiber.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/fiber.cpp.o -c /home/lk/gitRepo/serverFramework/captain/fiber.cpp
 
 CMakeFiles/captain.dir/captain/fiber.cpp.i: cmake_force
@@ -86,9 +99,22 @@ CMakeFiles/captain.dir/captain/fiber.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/fiber.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/fiber.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/fiber.cpp -o CMakeFiles/captain.dir/captain/fiber.cpp.s
 
+CMakeFiles/captain.dir/captain/hook.cpp.o: CMakeFiles/captain.dir/flags.make
+CMakeFiles/captain.dir/captain/hook.cpp.o: ../captain/hook.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/captain.dir/captain/hook.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/hook.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/hook.cpp.o -c /home/lk/gitRepo/serverFramework/captain/hook.cpp
+
+CMakeFiles/captain.dir/captain/hook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/hook.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/hook.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/hook.cpp > CMakeFiles/captain.dir/captain/hook.cpp.i
+
+CMakeFiles/captain.dir/captain/hook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/hook.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/hook.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/hook.cpp -o CMakeFiles/captain.dir/captain/hook.cpp.s
+
 CMakeFiles/captain.dir/captain/iomanager.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/iomanager.cpp.o: ../captain/iomanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/captain.dir/captain/iomanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/captain.dir/captain/iomanager.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/iomanager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/iomanager.cpp.o -c /home/lk/gitRepo/serverFramework/captain/iomanager.cpp
 
 CMakeFiles/captain.dir/captain/iomanager.cpp.i: cmake_force
@@ -101,7 +127,7 @@ CMakeFiles/captain.dir/captain/iomanager.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/log.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/log.cpp.o: ../captain/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/captain.dir/captain/log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/captain.dir/captain/log.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/log.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/log.cpp.o -c /home/lk/gitRepo/serverFramework/captain/log.cpp
 
 CMakeFiles/captain.dir/captain/log.cpp.i: cmake_force
@@ -114,7 +140,7 @@ CMakeFiles/captain.dir/captain/log.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/scheduler.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/scheduler.cpp.o: ../captain/scheduler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/captain.dir/captain/scheduler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/captain.dir/captain/scheduler.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/scheduler.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/scheduler.cpp.o -c /home/lk/gitRepo/serverFramework/captain/scheduler.cpp
 
 CMakeFiles/captain.dir/captain/scheduler.cpp.i: cmake_force
@@ -127,7 +153,7 @@ CMakeFiles/captain.dir/captain/scheduler.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/thread.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/captain.dir/captain/thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/captain.dir/captain/thread.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/thread.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/thread.cpp.o -c /home/lk/gitRepo/serverFramework/captain/thread.cpp
 
 CMakeFiles/captain.dir/captain/thread.cpp.i: cmake_force
@@ -140,7 +166,7 @@ CMakeFiles/captain.dir/captain/thread.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/timer.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/timer.cpp.o: ../captain/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/captain.dir/captain/timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/captain.dir/captain/timer.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/timer.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/timer.cpp.o -c /home/lk/gitRepo/serverFramework/captain/timer.cpp
 
 CMakeFiles/captain.dir/captain/timer.cpp.i: cmake_force
@@ -153,7 +179,7 @@ CMakeFiles/captain.dir/captain/timer.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/util.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/util.cpp.o: ../captain/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/captain.dir/captain/util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/captain.dir/captain/util.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/util.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/util.cpp.o -c /home/lk/gitRepo/serverFramework/captain/util.cpp
 
 CMakeFiles/captain.dir/captain/util.cpp.i: cmake_force
@@ -167,7 +193,9 @@ CMakeFiles/captain.dir/captain/util.cpp.s: cmake_force
 # Object files for target captain
 captain_OBJECTS = \
 "CMakeFiles/captain.dir/captain/config.cpp.o" \
+"CMakeFiles/captain.dir/captain/fd_manager.cpp.o" \
 "CMakeFiles/captain.dir/captain/fiber.cpp.o" \
+"CMakeFiles/captain.dir/captain/hook.cpp.o" \
 "CMakeFiles/captain.dir/captain/iomanager.cpp.o" \
 "CMakeFiles/captain.dir/captain/log.cpp.o" \
 "CMakeFiles/captain.dir/captain/scheduler.cpp.o" \
@@ -179,7 +207,9 @@ captain_OBJECTS = \
 captain_EXTERNAL_OBJECTS =
 
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/config.cpp.o
+../lib/libcaptain.so: CMakeFiles/captain.dir/captain/fd_manager.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/fiber.cpp.o
+../lib/libcaptain.so: CMakeFiles/captain.dir/captain/hook.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/iomanager.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/log.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/scheduler.cpp.o
@@ -188,7 +218,7 @@ captain_EXTERNAL_OBJECTS =
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/util.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/build.make
 ../lib/libcaptain.so: CMakeFiles/captain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library ../lib/libcaptain.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library ../lib/libcaptain.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/captain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

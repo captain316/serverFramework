@@ -114,6 +114,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_hook
+
+# Build rule for target.
+test_hook: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_hook
+.PHONY : test_hook
+
+# fast build rule for target.
+test_hook/fast:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/build
+.PHONY : test_hook/fast
+
+#=============================================================================
 # Target rules for targets named test_iomanager
 
 # Build rule for target.
@@ -244,6 +257,33 @@ captain/config.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/config.cpp.s
 .PHONY : captain/config.cpp.s
 
+captain/fd_manager.o: captain/fd_manager.cpp.o
+
+.PHONY : captain/fd_manager.o
+
+# target to build an object file
+captain/fd_manager.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/fd_manager.cpp.o
+.PHONY : captain/fd_manager.cpp.o
+
+captain/fd_manager.i: captain/fd_manager.cpp.i
+
+.PHONY : captain/fd_manager.i
+
+# target to preprocess a source file
+captain/fd_manager.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/fd_manager.cpp.i
+.PHONY : captain/fd_manager.cpp.i
+
+captain/fd_manager.s: captain/fd_manager.cpp.s
+
+.PHONY : captain/fd_manager.s
+
+# target to generate assembly for a file
+captain/fd_manager.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/fd_manager.cpp.s
+.PHONY : captain/fd_manager.cpp.s
+
 captain/fiber.o: captain/fiber.cpp.o
 
 .PHONY : captain/fiber.o
@@ -270,6 +310,33 @@ captain/fiber.s: captain/fiber.cpp.s
 captain/fiber.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/fiber.cpp.s
 .PHONY : captain/fiber.cpp.s
+
+captain/hook.o: captain/hook.cpp.o
+
+.PHONY : captain/hook.o
+
+# target to build an object file
+captain/hook.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/hook.cpp.o
+.PHONY : captain/hook.cpp.o
+
+captain/hook.i: captain/hook.cpp.i
+
+.PHONY : captain/hook.i
+
+# target to preprocess a source file
+captain/hook.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/hook.cpp.i
+.PHONY : captain/hook.cpp.i
+
+captain/hook.s: captain/hook.cpp.s
+
+.PHONY : captain/hook.s
+
+# target to generate assembly for a file
+captain/hook.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/hook.cpp.s
+.PHONY : captain/hook.cpp.s
 
 captain/iomanager.o: captain/iomanager.cpp.o
 
@@ -514,6 +581,33 @@ tests/test_fiber.cpp.s:
 	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.s
 .PHONY : tests/test_fiber.cpp.s
 
+tests/test_hook.o: tests/test_hook.cpp.o
+
+.PHONY : tests/test_hook.o
+
+# target to build an object file
+tests/test_hook.cpp.o:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cpp.o
+.PHONY : tests/test_hook.cpp.o
+
+tests/test_hook.i: tests/test_hook.cpp.i
+
+.PHONY : tests/test_hook.i
+
+# target to preprocess a source file
+tests/test_hook.cpp.i:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cpp.i
+.PHONY : tests/test_hook.cpp.i
+
+tests/test_hook.s: tests/test_hook.cpp.s
+
+.PHONY : tests/test_hook.s
+
+# target to generate assembly for a file
+tests/test_hook.cpp.s:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cpp.s
+.PHONY : tests/test_hook.cpp.s
+
 tests/test_iomanager.o: tests/test_iomanager.cpp.o
 
 .PHONY : tests/test_iomanager.o
@@ -628,6 +722,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test_hook"
 	@echo "... test_iomanager"
 	@echo "... test_scheduler"
 	@echo "... rebuild_cache"
@@ -641,9 +736,15 @@ help:
 	@echo "... captain/config.o"
 	@echo "... captain/config.i"
 	@echo "... captain/config.s"
+	@echo "... captain/fd_manager.o"
+	@echo "... captain/fd_manager.i"
+	@echo "... captain/fd_manager.s"
 	@echo "... captain/fiber.o"
 	@echo "... captain/fiber.i"
 	@echo "... captain/fiber.s"
+	@echo "... captain/hook.o"
+	@echo "... captain/hook.i"
+	@echo "... captain/hook.s"
 	@echo "... captain/iomanager.o"
 	@echo "... captain/iomanager.i"
 	@echo "... captain/iomanager.s"
@@ -671,6 +772,9 @@ help:
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"
+	@echo "... tests/test_hook.o"
+	@echo "... tests/test_hook.i"
+	@echo "... tests/test_hook.s"
 	@echo "... tests/test_iomanager.o"
 	@echo "... tests/test_iomanager.i"
 	@echo "... tests/test_iomanager.s"

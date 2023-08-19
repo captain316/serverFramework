@@ -1,3 +1,4 @@
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/test_hook.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_iomanager.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_scheduler.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/rebuild_cache.dir

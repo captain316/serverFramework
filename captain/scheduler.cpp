@@ -1,7 +1,7 @@
 #include "include/scheduler.h"
 #include "include/log.h"
 #include "include/macro.h"
-//#include "hook.h"
+#include "include/hook.h"
 
 namespace captain {
 
@@ -162,7 +162,7 @@ void Scheduler::setThis() {
  */
 void Scheduler::run() {
     CAPTAIN_LOG_INFO(g_logger) << "run";
-    //set_hook_enable(true);
+    set_hook_enable(true);
     setThis();
     //return;
     //检查当前线程的 ID 是否等于调度器的根线程 ID

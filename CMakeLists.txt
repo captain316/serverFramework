@@ -15,7 +15,9 @@ link_directories(/usr/local/lib)
 
 set(LIB_SRC
     captain/config.cpp
+    captain/fd_manager.cpp
     captain/fiber.cpp
+    captain/hook.cpp
     captain/iomanager.cpp
     captain/log.cpp
     captain/scheduler.cpp
@@ -29,6 +31,7 @@ force_redefine_file_macro_for_sources(captain) #__FILE__ 它用于强制重新�
 #find_library(YAMLCPP yaml-cpp)
 set(LIBS
         captain
+        dl
         pthread
         yaml-cpp)
 
@@ -68,6 +71,11 @@ add_executable(test_iomanager tests/test_iomanager.cpp)
 add_dependencies(test_iomanager captain)
 force_redefine_file_macro_for_sources(test_iomanager) #__FILE__
 target_link_libraries(test_iomanager ${LIBS})
+
+add_executable(test_hook tests/test_hook.cpp)
+add_dependencies(test_hook captain)
+force_redefine_file_macro_for_sources(test_hook) #__FILE__
+target_link_libraries(test_hook ${LIBS})
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

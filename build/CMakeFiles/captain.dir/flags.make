@@ -10,7 +10,11 @@ CXX_INCLUDES = -I/home/lk/gitRepo/serverFramework/.
 
 # Custom defines: CMakeFiles/captain.dir/captain/config.cpp.o_DEFINES = __FILE__="captain/config.cpp"
 
+# Custom defines: CMakeFiles/captain.dir/captain/fd_manager.cpp.o_DEFINES = __FILE__="captain/fd_manager.cpp"
+
 # Custom defines: CMakeFiles/captain.dir/captain/fiber.cpp.o_DEFINES = __FILE__="captain/fiber.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/hook.cpp.o_DEFINES = __FILE__="captain/hook.cpp"
 
 # Custom defines: CMakeFiles/captain.dir/captain/iomanager.cpp.o_DEFINES = __FILE__="captain/iomanager.cpp"
 
