@@ -100,6 +100,8 @@ assert.h
 util.h
 ../captain/include/util.h
 
+../captain/include/noncopyable.h
+
 ../captain/include/scheduler.h
 memory
 -
@@ -127,6 +129,8 @@ semaphore.h
 -
 atomic
 -
+noncopyable.h
+../captain/include/noncopyable.h
 
 ../captain/include/util.h
 pthread.h

@@ -100,6 +100,8 @@ assert.h
 util.h
 /home/lk/gitRepo/serverFramework/captain/include/util.h
 
+/home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
+
 /home/lk/gitRepo/serverFramework/captain/include/scheduler.h
 memory
 -
@@ -127,6 +129,8 @@ semaphore.h
 -
 atomic
 -
+noncopyable.h
+/home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
 
 /home/lk/gitRepo/serverFramework/captain/include/util.h
 pthread.h

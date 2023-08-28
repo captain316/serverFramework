@@ -6,6 +6,7 @@ CMakeFiles/test_hook.dir/tests/test_hook.cpp.o
  ../captain/include/hook.h
  ../captain/include/iomanager.h
  ../captain/include/log.h
+ ../captain/include/noncopyable.h
  ../captain/include/scheduler.h
  ../captain/include/singleton.h
  ../captain/include/thread.h

@@ -31,7 +31,9 @@ void test_sock() {
     memset(&addr, 0, sizeof(addr));
     addr.sin_family = AF_INET;
     addr.sin_port = htons(80);
-    inet_pton(AF_INET, "115.239.210.27", &addr.sin_addr.s_addr);
+    //inet_pton(AF_INET, "115.239.210.27", &addr.sin_addr.s_addr);
+    inet_pton(AF_INET, "39.156.66.10", &addr.sin_addr.s_addr);
+    //inet_pton(AF_INET, "47.103.24.173", &addr.sin_addr.s_addr);
 
     CAPTAIN_LOG_INFO(g_logger) << "begin connect";
     int rt = connect(sock, (const sockaddr*)&addr, sizeof(addr));
@@ -64,8 +66,9 @@ void test_sock() {
 }
 
 int main(int argc, char** argv) {
-    test_sleep();
-    // captain::IOManager iom;
-    // iom.schedule(test_sock);
+    //test_sleep();
+    //test_sock();
+    captain::IOManager iom;
+    iom.schedule(test_sock);
     return 0;
 }

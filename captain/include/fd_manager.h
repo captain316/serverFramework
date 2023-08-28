@@ -5,6 +5,8 @@
 #include "thread.h"
 #include "singleton.h"
 
+//区分一个句柄是否是socket、是否是人为设定的Nonblock、获得该句柄的超时时间等等
+
 namespace captain {
 
 class FdCtx : public std::enable_shared_from_this<FdCtx> {
@@ -38,6 +40,8 @@ private:
     uint64_t m_sendTimeout;
 };
 
+//设计一个 FdManager 类来记录所有分配过的 fd 的上下文，
+//这是一个单例类，每个 socket fd 上下文记录了当前 fd 的读写超时，是否设置非阻塞等信息。
 class FdManager {
 public:
     typedef RWMutex RWMutexType;

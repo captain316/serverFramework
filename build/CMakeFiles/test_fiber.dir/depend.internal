@@ -7,6 +7,7 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o
  ../captain/include/fiber.h
  ../captain/include/log.h
  ../captain/include/macro.h
+ ../captain/include/noncopyable.h
  ../captain/include/scheduler.h
  ../captain/include/singleton.h
  ../captain/include/thread.h

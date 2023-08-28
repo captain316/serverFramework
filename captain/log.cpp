@@ -8,7 +8,7 @@
 
 namespace captain {
 
-/*
+
 const char* LogLevel::ToString(LogLevel::Level level) {
     switch(level){
 #define XX(name) \
@@ -27,8 +27,8 @@ const char* LogLevel::ToString(LogLevel::Level level) {
     }
     return "UNKNOW";
 }
-*/
-const char* LogLevel::ToString(LogLevel::Level level) {
+
+/* const char* LogLevel::ToString(LogLevel::Level level) {
     switch(level) {
     case LogLevel::DEBUG:
         return "DEBUG";
@@ -43,7 +43,7 @@ const char* LogLevel::ToString(LogLevel::Level level) {
     default:
         return "UNKNOWN";
     }
-}
+} */
 
 LogLevel::Level LogLevel::FromString(const std::string& str) {
 #define XX(level, v) \

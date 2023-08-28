@@ -5,6 +5,7 @@ CMakeFiles/captain.dir/captain/config.cpp.o
  /home/lk/gitRepo/serverFramework/captain/config.cpp
  /home/lk/gitRepo/serverFramework/captain/include/config.h
  /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
  /home/lk/gitRepo/serverFramework/captain/include/util.h
@@ -12,6 +13,7 @@ CMakeFiles/captain.dir/captain/fd_manager.cpp.o
  /home/lk/gitRepo/serverFramework/captain/fd_manager.cpp
  /home/lk/gitRepo/serverFramework/captain/include/fd_manager.h
  /home/lk/gitRepo/serverFramework/captain/include/hook.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
 CMakeFiles/captain.dir/captain/fiber.cpp.o
@@ -20,6 +22,7 @@ CMakeFiles/captain.dir/captain/fiber.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/fiber.h
  /home/lk/gitRepo/serverFramework/captain/include/log.h
  /home/lk/gitRepo/serverFramework/captain/include/macro.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/scheduler.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
@@ -32,6 +35,7 @@ CMakeFiles/captain.dir/captain/hook.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/hook.h
  /home/lk/gitRepo/serverFramework/captain/include/iomanager.h
  /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/scheduler.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
@@ -42,6 +46,7 @@ CMakeFiles/captain.dir/captain/iomanager.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/iomanager.h
  /home/lk/gitRepo/serverFramework/captain/include/log.h
  /home/lk/gitRepo/serverFramework/captain/include/macro.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/scheduler.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
@@ -51,6 +56,7 @@ CMakeFiles/captain.dir/captain/iomanager.cpp.o
 CMakeFiles/captain.dir/captain/log.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/config.h
  /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
  /home/lk/gitRepo/serverFramework/captain/include/util.h
@@ -60,6 +66,7 @@ CMakeFiles/captain.dir/captain/scheduler.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/hook.h
  /home/lk/gitRepo/serverFramework/captain/include/log.h
  /home/lk/gitRepo/serverFramework/captain/include/macro.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/scheduler.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
@@ -67,11 +74,13 @@ CMakeFiles/captain.dir/captain/scheduler.cpp.o
  /home/lk/gitRepo/serverFramework/captain/scheduler.cpp
 CMakeFiles/captain.dir/captain/thread.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
  /home/lk/gitRepo/serverFramework/captain/include/util.h
  /home/lk/gitRepo/serverFramework/captain/thread.cpp
 CMakeFiles/captain.dir/captain/timer.cpp.o
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
  /home/lk/gitRepo/serverFramework/captain/include/timer.h
  /home/lk/gitRepo/serverFramework/captain/include/util.h
@@ -79,6 +88,7 @@ CMakeFiles/captain.dir/captain/timer.cpp.o
 CMakeFiles/captain.dir/captain/util.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/fiber.h
  /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
  /home/lk/gitRepo/serverFramework/captain/include/util.h

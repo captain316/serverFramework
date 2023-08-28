@@ -8,6 +8,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o
  ../captain/include/iomanager.h
  ../captain/include/log.h
  ../captain/include/macro.h
+ ../captain/include/noncopyable.h
  ../captain/include/scheduler.h
  ../captain/include/singleton.h
  ../captain/include/thread.h

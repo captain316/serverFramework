@@ -4,6 +4,7 @@
 CMakeFiles/test_config.dir/tests/test_config.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/config.h
  /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
  /home/lk/gitRepo/serverFramework/captain/include/singleton.h
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
  /home/lk/gitRepo/serverFramework/captain/include/util.h

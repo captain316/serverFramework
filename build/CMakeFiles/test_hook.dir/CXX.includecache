@@ -66,6 +66,8 @@ singleton.h
 thread.h
 ../captain/include/thread.h
 
+../captain/include/noncopyable.h
+
 ../captain/include/scheduler.h
 memory
 -
@@ -93,6 +95,8 @@ semaphore.h
 -
 atomic
 -
+noncopyable.h
+../captain/include/noncopyable.h
 
 ../captain/include/timer.h
 memory

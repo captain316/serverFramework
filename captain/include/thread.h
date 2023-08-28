@@ -5,21 +5,17 @@
 #include <pthread.h>
 #include <semaphore.h>
 #include <atomic>
-
+#include "noncopyable.h"
 namespace captain {
 
 //信号量
-class Semaphore {
+class Semaphore : Noncopyable {
 public:
     Semaphore(uint32_t count = 0);
     ~Semaphore();
 
     void wait();
     void notify();
-private:
-    Semaphore(const Semaphore&) = delete;
-    Semaphore(const Semaphore&&) = delete;
-    Semaphore& operator=(const Semaphore&) = delete;
 
 private:
     sem_t m_semaphore;
@@ -123,7 +119,7 @@ private:
 
 
 //互斥锁
-class Mutex {
+class Mutex : Noncopyable  {
 public:
     typedef ScopedLockImpl<Mutex> Lock;
     Mutex() {
@@ -146,7 +142,7 @@ private:
 };
 
 //用来验证线程安全  什么都不做
-class NullMutex {
+class NullMutex : Noncopyable {
 public:
     typedef ScopedLockImpl<NullMutex> Lock;
     NullMutex() {}
@@ -156,7 +152,7 @@ public:
 };
 
 //读写锁
-class RWMutex{
+class RWMutex : Noncopyable {
 public:
     typedef ReadScopedLockImpl<RWMutex> ReadLock;
     typedef WriteScopedLockImpl<RWMutex> WriteLock;
@@ -184,7 +180,7 @@ private:
     pthread_rwlock_t m_lock;
 };
 
-class NullRWMutex {
+class NullRWMutex : Noncopyable {
 public:
     typedef ReadScopedLockImpl<NullMutex> ReadLock;
     typedef WriteScopedLockImpl<NullMutex> WriteLock;
@@ -200,7 +196,7 @@ public:
 //优点：等待锁的时间减少，性能提高。
 //缺点：cpu占用率高。（没获得锁会在cpu空跑一段时间）
 //冲突时间很短，适合spinlock。
-class Spinlock {
+class Spinlock : Noncopyable {
 public:
     typedef ScopedLockImpl<Spinlock> Lock;
     Spinlock() {
@@ -223,7 +219,7 @@ private:
 };
 
 //CASLock,一种原子锁
-class CASLock {
+class CASLock : Noncopyable {
 public:
     typedef ScopedLockImpl<CASLock> Lock;
     CASLock() {

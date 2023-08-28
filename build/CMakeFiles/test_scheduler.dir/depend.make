@@ -6,6 +6,7 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.o: ../captain/include/con
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.o: ../captain/include/fiber.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.o: ../captain/include/log.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.o: ../captain/include/macro.h
+CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.o: ../captain/include/noncopyable.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.o: ../captain/include/scheduler.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.o: ../captain/include/singleton.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.o: ../captain/include/thread.h

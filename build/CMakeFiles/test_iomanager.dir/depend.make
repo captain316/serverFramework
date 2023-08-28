@@ -7,6 +7,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o: ../captain/include/fib
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o: ../captain/include/iomanager.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o: ../captain/include/log.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o: ../captain/include/macro.h
+CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o: ../captain/include/noncopyable.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o: ../captain/include/scheduler.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o: ../captain/include/singleton.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cpp.o: ../captain/include/thread.h

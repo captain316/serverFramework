@@ -34,6 +34,8 @@ singleton.h
 thread.h
 /home/lk/gitRepo/serverFramework/captain/include/thread.h
 
+/home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
+
 /home/lk/gitRepo/serverFramework/captain/include/singleton.h
 
 /home/lk/gitRepo/serverFramework/captain/include/thread.h
@@ -49,6 +51,8 @@ semaphore.h
 -
 atomic
 -
+noncopyable.h
+/home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
 
 /home/lk/gitRepo/serverFramework/captain/include/util.h
 pthread.h
