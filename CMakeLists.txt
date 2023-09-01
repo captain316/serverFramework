@@ -14,6 +14,7 @@ include_directories(/usr/local/include)
 link_directories(/usr/local/lib)
 
 set(LIB_SRC
+    captain/address.cpp
     captain/config.cpp
     captain/fd_manager.cpp
     captain/fiber.cpp

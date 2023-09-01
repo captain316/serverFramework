@@ -8,6 +8,8 @@ CXX_DEFINES = -Dcaptain_EXPORTS
 
 CXX_INCLUDES = -I/home/lk/gitRepo/serverFramework/. 
 
+# Custom defines: CMakeFiles/captain.dir/captain/address.cpp.o_DEFINES = __FILE__="captain/address.cpp"
+
 # Custom defines: CMakeFiles/captain.dir/captain/config.cpp.o_DEFINES = __FILE__="captain/config.cpp"
 
 # Custom defines: CMakeFiles/captain.dir/captain/fd_manager.cpp.o_DEFINES = __FILE__="captain/fd_manager.cpp"

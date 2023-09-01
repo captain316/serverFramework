@@ -230,6 +230,33 @@ captain/fast:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/build
 .PHONY : captain/fast
 
+captain/address.o: captain/address.cpp.o
+
+.PHONY : captain/address.o
+
+# target to build an object file
+captain/address.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/address.cpp.o
+.PHONY : captain/address.cpp.o
+
+captain/address.i: captain/address.cpp.i
+
+.PHONY : captain/address.i
+
+# target to preprocess a source file
+captain/address.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/address.cpp.i
+.PHONY : captain/address.cpp.i
+
+captain/address.s: captain/address.cpp.s
+
+.PHONY : captain/address.s
+
+# target to generate assembly for a file
+captain/address.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/address.cpp.s
+.PHONY : captain/address.cpp.s
+
 captain/config.o: captain/config.cpp.o
 
 .PHONY : captain/config.o
@@ -733,6 +760,9 @@ help:
 	@echo "... test"
 	@echo "... test_fiber"
 	@echo "... captain"
+	@echo "... captain/address.o"
+	@echo "... captain/address.i"
+	@echo "... captain/address.s"
 	@echo "... captain/config.o"
 	@echo "... captain/config.i"
 	@echo "... captain/config.s"
