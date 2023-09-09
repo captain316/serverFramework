@@ -24,6 +24,8 @@ CXX_INCLUDES = -I/home/lk/gitRepo/serverFramework/.
 
 # Custom defines: CMakeFiles/captain.dir/captain/scheduler.cpp.o_DEFINES = __FILE__="captain/scheduler.cpp"
 
+# Custom defines: CMakeFiles/captain.dir/captain/socket.cpp.o_DEFINES = __FILE__="captain/socket.cpp"
+
 # Custom defines: CMakeFiles/captain.dir/captain/thread.cpp.o_DEFINES = __FILE__="captain/thread.cpp"
 
 # Custom defines: CMakeFiles/captain.dir/captain/timer.cpp.o_DEFINES = __FILE__="captain/timer.cpp"

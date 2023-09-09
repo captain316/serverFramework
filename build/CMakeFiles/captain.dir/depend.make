@@ -81,6 +81,22 @@ CMakeFiles/captain.dir/captain/scheduler.cpp.o: ../captain/include/thread.h
 CMakeFiles/captain.dir/captain/scheduler.cpp.o: ../captain/include/util.h
 CMakeFiles/captain.dir/captain/scheduler.cpp.o: ../captain/scheduler.cpp
 
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/address.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/fd_manager.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/fiber.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/hook.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/iomanager.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/log.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/macro.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/noncopyable.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/scheduler.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/singleton.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/socket.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/thread.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/timer.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/util.h
+CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/socket.cpp
+
 CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/include/log.h
 CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/include/noncopyable.h
 CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/include/singleton.h

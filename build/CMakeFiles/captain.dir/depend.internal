@@ -81,6 +81,22 @@ CMakeFiles/captain.dir/captain/scheduler.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
  /home/lk/gitRepo/serverFramework/captain/include/util.h
  /home/lk/gitRepo/serverFramework/captain/scheduler.cpp
+CMakeFiles/captain.dir/captain/socket.cpp.o
+ /home/lk/gitRepo/serverFramework/captain/include/address.h
+ /home/lk/gitRepo/serverFramework/captain/include/fd_manager.h
+ /home/lk/gitRepo/serverFramework/captain/include/fiber.h
+ /home/lk/gitRepo/serverFramework/captain/include/hook.h
+ /home/lk/gitRepo/serverFramework/captain/include/iomanager.h
+ /home/lk/gitRepo/serverFramework/captain/include/log.h
+ /home/lk/gitRepo/serverFramework/captain/include/macro.h
+ /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h
+ /home/lk/gitRepo/serverFramework/captain/include/scheduler.h
+ /home/lk/gitRepo/serverFramework/captain/include/singleton.h
+ /home/lk/gitRepo/serverFramework/captain/include/socket.h
+ /home/lk/gitRepo/serverFramework/captain/include/thread.h
+ /home/lk/gitRepo/serverFramework/captain/include/timer.h
+ /home/lk/gitRepo/serverFramework/captain/include/util.h
+ /home/lk/gitRepo/serverFramework/captain/socket.cpp
 CMakeFiles/captain.dir/captain/thread.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/log.h
  /home/lk/gitRepo/serverFramework/captain/include/noncopyable.h

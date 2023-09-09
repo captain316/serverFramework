@@ -291,7 +291,7 @@ IPAddress::ptr IPAddress::Create(const char* address, uint16_t port) {
     addrinfo hints, *results;
     memset(&hints, 0, sizeof(addrinfo));
     //进行一个数值地址的解析（AI_NUMERICHOST 标志），并且不限制地址族（AF_UNSPEC）。
-    hints.ai_flags = AI_NUMERICHOST;
+    hints.ai_flags = AI_NUMERICHOST; //限制为数字格式，域名形式不行
     hints.ai_family = AF_UNSPEC;
     //调用 getaddrinfo 函数，传入要解析的地址字符串和端口为 NULL，以及之前创建的 hints 结构体。
     //这个函数会尝试将地址字符串解析为一个或多个地址结构体，解析的结果会存储在一个 addrinfo 结构体链表 results 中。

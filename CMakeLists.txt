@@ -22,6 +22,7 @@ set(LIB_SRC
     captain/iomanager.cpp
     captain/log.cpp
     captain/scheduler.cpp
+    captain/socket.cpp
     captain/thread.cpp
     captain/timer.cpp
     captain/util.cpp
@@ -77,6 +78,16 @@ add_executable(test_hook tests/test_hook.cpp)
 add_dependencies(test_hook captain)
 force_redefine_file_macro_for_sources(test_hook) #__FILE__
 target_link_libraries(test_hook ${LIBS})
+
+add_executable(test_address tests/test_address.cpp)
+add_dependencies(test_address captain)
+force_redefine_file_macro_for_sources(test_address) #__FILE__
+target_link_libraries(test_address ${LIBS})
+
+add_executable(test_socket tests/test_socket.cpp)
+add_dependencies(test_socket captain)
+force_redefine_file_macro_for_sources(test_socket) #__FILE__
+target_link_libraries(test_socket ${LIBS})
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

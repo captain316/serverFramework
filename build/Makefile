@@ -114,6 +114,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_socket
+
+# Build rule for target.
+test_socket: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_socket
+.PHONY : test_socket
+
+# fast build rule for target.
+test_socket/fast:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
+.PHONY : test_socket/fast
+
+#=============================================================================
 # Target rules for targets named test_hook
 
 # Build rule for target.
@@ -203,6 +216,19 @@ test: cmake_check_build_system
 test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named test_address
+
+# Build rule for target.
+test_address: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_address
+.PHONY : test_address
+
+# fast build rule for target.
+test_address/fast:
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/build
+.PHONY : test_address/fast
 
 #=============================================================================
 # Target rules for targets named test_fiber
@@ -446,6 +472,33 @@ captain/scheduler.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/scheduler.cpp.s
 .PHONY : captain/scheduler.cpp.s
 
+captain/socket.o: captain/socket.cpp.o
+
+.PHONY : captain/socket.o
+
+# target to build an object file
+captain/socket.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/socket.cpp.o
+.PHONY : captain/socket.cpp.o
+
+captain/socket.i: captain/socket.cpp.i
+
+.PHONY : captain/socket.i
+
+# target to preprocess a source file
+captain/socket.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/socket.cpp.i
+.PHONY : captain/socket.cpp.i
+
+captain/socket.s: captain/socket.cpp.s
+
+.PHONY : captain/socket.s
+
+# target to generate assembly for a file
+captain/socket.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/socket.cpp.s
+.PHONY : captain/socket.cpp.s
+
 captain/thread.o: captain/thread.cpp.o
 
 .PHONY : captain/thread.o
@@ -553,6 +606,33 @@ tests/test.s: tests/test.cpp.s
 tests/test.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.s
 .PHONY : tests/test.cpp.s
+
+tests/test_address.o: tests/test_address.cpp.o
+
+.PHONY : tests/test_address.o
+
+# target to build an object file
+tests/test_address.cpp.o:
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cpp.o
+.PHONY : tests/test_address.cpp.o
+
+tests/test_address.i: tests/test_address.cpp.i
+
+.PHONY : tests/test_address.i
+
+# target to preprocess a source file
+tests/test_address.cpp.i:
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cpp.i
+.PHONY : tests/test_address.cpp.i
+
+tests/test_address.s: tests/test_address.cpp.s
+
+.PHONY : tests/test_address.s
+
+# target to generate assembly for a file
+tests/test_address.cpp.s:
+	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cpp.s
+.PHONY : tests/test_address.cpp.s
 
 tests/test_config.o: tests/test_config.cpp.o
 
@@ -689,6 +769,33 @@ tests/test_scheduler.cpp.s:
 	$(MAKE) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cpp.s
 .PHONY : tests/test_scheduler.cpp.s
 
+tests/test_socket.o: tests/test_socket.cpp.o
+
+.PHONY : tests/test_socket.o
+
+# target to build an object file
+tests/test_socket.cpp.o:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cpp.o
+.PHONY : tests/test_socket.cpp.o
+
+tests/test_socket.i: tests/test_socket.cpp.i
+
+.PHONY : tests/test_socket.i
+
+# target to preprocess a source file
+tests/test_socket.cpp.i:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cpp.i
+.PHONY : tests/test_socket.cpp.i
+
+tests/test_socket.s: tests/test_socket.cpp.s
+
+.PHONY : tests/test_socket.s
+
+# target to generate assembly for a file
+tests/test_socket.cpp.s:
+	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cpp.s
+.PHONY : tests/test_socket.cpp.s
+
 tests/test_thread.o: tests/test_thread.cpp.o
 
 .PHONY : tests/test_thread.o
@@ -749,6 +856,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test_socket"
 	@echo "... test_hook"
 	@echo "... test_iomanager"
 	@echo "... test_scheduler"
@@ -758,6 +866,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... test_thread"
 	@echo "... test"
+	@echo "... test_address"
 	@echo "... test_fiber"
 	@echo "... captain"
 	@echo "... captain/address.o"
@@ -784,6 +893,9 @@ help:
 	@echo "... captain/scheduler.o"
 	@echo "... captain/scheduler.i"
 	@echo "... captain/scheduler.s"
+	@echo "... captain/socket.o"
+	@echo "... captain/socket.i"
+	@echo "... captain/socket.s"
 	@echo "... captain/thread.o"
 	@echo "... captain/thread.i"
 	@echo "... captain/thread.s"
@@ -796,6 +908,9 @@ help:
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"
+	@echo "... tests/test_address.o"
+	@echo "... tests/test_address.i"
+	@echo "... tests/test_address.s"
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
@@ -811,6 +926,9 @@ help:
 	@echo "... tests/test_scheduler.o"
 	@echo "... tests/test_scheduler.i"
 	@echo "... tests/test_scheduler.s"
+	@echo "... tests/test_socket.o"
+	@echo "... tests/test_socket.i"
+	@echo "... tests/test_socket.s"
 	@echo "... tests/test_thread.o"
 	@echo "... tests/test_thread.i"
 	@echo "... tests/test_thread.s"
