@@ -10,6 +10,15 @@ CMakeFiles/captain.dir/captain/address.cpp.o: ../captain/include/singleton.h
 CMakeFiles/captain.dir/captain/address.cpp.o: ../captain/include/thread.h
 CMakeFiles/captain.dir/captain/address.cpp.o: ../captain/include/util.h
 
+CMakeFiles/captain.dir/captain/bytearray.cpp.o: ../captain/bytearray.cpp
+CMakeFiles/captain.dir/captain/bytearray.cpp.o: ../captain/include/bytearray.h
+CMakeFiles/captain.dir/captain/bytearray.cpp.o: ../captain/include/endian.h
+CMakeFiles/captain.dir/captain/bytearray.cpp.o: ../captain/include/log.h
+CMakeFiles/captain.dir/captain/bytearray.cpp.o: ../captain/include/noncopyable.h
+CMakeFiles/captain.dir/captain/bytearray.cpp.o: ../captain/include/singleton.h
+CMakeFiles/captain.dir/captain/bytearray.cpp.o: ../captain/include/thread.h
+CMakeFiles/captain.dir/captain/bytearray.cpp.o: ../captain/include/util.h
+
 CMakeFiles/captain.dir/captain/config.cpp.o: ../captain/config.cpp
 CMakeFiles/captain.dir/captain/config.cpp.o: ../captain/include/config.h
 CMakeFiles/captain.dir/captain/config.cpp.o: ../captain/include/log.h

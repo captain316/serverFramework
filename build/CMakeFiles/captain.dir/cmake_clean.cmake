@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../lib/libcaptain.pdb"
   "../lib/libcaptain.so"
   "CMakeFiles/captain.dir/captain/address.cpp.o"
+  "CMakeFiles/captain.dir/captain/bytearray.cpp.o"
   "CMakeFiles/captain.dir/captain/config.cpp.o"
   "CMakeFiles/captain.dir/captain/fd_manager.cpp.o"
   "CMakeFiles/captain.dir/captain/fiber.cpp.o"

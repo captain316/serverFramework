@@ -15,6 +15,7 @@ link_directories(/usr/local/lib)
 
 set(LIB_SRC
     captain/address.cpp
+    captain/bytearray.cpp
     captain/config.cpp
     captain/fd_manager.cpp
     captain/fiber.cpp
@@ -88,6 +89,11 @@ add_executable(test_socket tests/test_socket.cpp)
 add_dependencies(test_socket captain)
 force_redefine_file_macro_for_sources(test_socket) #__FILE__
 target_link_libraries(test_socket ${LIBS})
+
+add_executable(test_bytearray tests/test_bytearray.cpp)
+add_dependencies(test_bytearray captain)
+force_redefine_file_macro_for_sources(test_bytearray) #__FILE__
+target_link_libraries(test_bytearray ${LIBS})
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
