@@ -19,6 +19,10 @@ set(LIB_SRC
     captain/config.cpp
     captain/fd_manager.cpp
     captain/fiber.cpp
+    captain/http/http.cpp
+    captain/http/http_parser.cpp
+    captain/http/http11_parser.rl.cpp
+    captain/http/httpclient_parser.rl.cpp
     captain/hook.cpp
     captain/iomanager.cpp
     captain/log.cpp
@@ -94,6 +98,16 @@ add_executable(test_bytearray tests/test_bytearray.cpp)
 add_dependencies(test_bytearray captain)
 force_redefine_file_macro_for_sources(test_bytearray) #__FILE__
 target_link_libraries(test_bytearray ${LIBS})
+
+add_executable(test_http tests/test_http.cpp)
+add_dependencies(test_http captain)
+force_redefine_file_macro_for_sources(test_http) #__FILE__
+target_link_libraries(test_http ${LIBS})
+
+add_executable(test_http_parser tests/test_http_parser.cpp)
+add_dependencies(test_http_parser captain)
+force_redefine_file_macro_for_sources(test_http_parser) #__FILE__
+target_link_libraries(test_http_parser ${LIBS})
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

@@ -46,6 +46,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/test_http_parser.dir/DependInfo.cmake"
   "CMakeFiles/captain.dir/DependInfo.cmake"
   "CMakeFiles/test_fiber.dir/DependInfo.cmake"
   "CMakeFiles/test_address.dir/DependInfo.cmake"
@@ -58,4 +59,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_iomanager.dir/DependInfo.cmake"
   "CMakeFiles/test_hook.dir/DependInfo.cmake"
   "CMakeFiles/test_socket.dir/DependInfo.cmake"
+  "CMakeFiles/test_http.dir/DependInfo.cmake"
   )

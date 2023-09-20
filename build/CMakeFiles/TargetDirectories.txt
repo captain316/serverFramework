@@ -1,10 +1,11 @@
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/rebuild_cache.dir
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/edit_cache.dir
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/test_http_parser.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/captain.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_fiber.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_address.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_thread.dir
-/home/lk/gitRepo/serverFramework/build/CMakeFiles/rebuild_cache.dir
-/home/lk/gitRepo/serverFramework/build/CMakeFiles/edit_cache.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_config.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_bytearray.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_util.dir
@@ -12,3 +13,4 @@
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_iomanager.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_hook.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_socket.dir
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/test_http.dir

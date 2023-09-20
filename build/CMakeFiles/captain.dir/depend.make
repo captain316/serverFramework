@@ -59,6 +59,30 @@ CMakeFiles/captain.dir/captain/hook.cpp.o: ../captain/include/thread.h
 CMakeFiles/captain.dir/captain/hook.cpp.o: ../captain/include/timer.h
 CMakeFiles/captain.dir/captain/hook.cpp.o: ../captain/include/util.h
 
+CMakeFiles/captain.dir/captain/http/http.cpp.o: ../captain/http/http.cpp
+CMakeFiles/captain.dir/captain/http/http.cpp.o: ../captain/http/http.h
+
+CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o: ../captain/http/http11_common.h
+CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o: ../captain/http/http11_parser.h
+CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o: ../captain/http/http11_parser.rl.cpp
+
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/include/config.h
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/include/log.h
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/include/noncopyable.h
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/include/singleton.h
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/include/thread.h
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/include/util.h
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/http/http.h
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/http/http11_common.h
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/http/http11_parser.h
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/http/http_parser.cpp
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/http/http_parser.h
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/http/httpclient_parser.h
+
+CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o: ../captain/http/http11_common.h
+CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o: ../captain/http/httpclient_parser.h
+CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o: ../captain/http/httpclient_parser.rl.cpp
+
 CMakeFiles/captain.dir/captain/iomanager.cpp.o: ../captain/include/fiber.h
 CMakeFiles/captain.dir/captain/iomanager.cpp.o: ../captain/include/iomanager.h
 CMakeFiles/captain.dir/captain/iomanager.cpp.o: ../captain/include/log.h

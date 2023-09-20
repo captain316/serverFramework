@@ -18,6 +18,14 @@ CXX_INCLUDES = -I/home/lk/gitRepo/serverFramework/.
 
 # Custom defines: CMakeFiles/captain.dir/captain/fiber.cpp.o_DEFINES = __FILE__="captain/fiber.cpp"
 
+# Custom defines: CMakeFiles/captain.dir/captain/http/http.cpp.o_DEFINES = __FILE__="captain/http/http.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/http/http_parser.cpp.o_DEFINES = __FILE__="captain/http/http_parser.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o_DEFINES = __FILE__="captain/http/http11_parser.rl.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o_DEFINES = __FILE__="captain/http/httpclient_parser.rl.cpp"
+
 # Custom defines: CMakeFiles/captain.dir/captain/hook.cpp.o_DEFINES = __FILE__="captain/hook.cpp"
 
 # Custom defines: CMakeFiles/captain.dir/captain/iomanager.cpp.o_DEFINES = __FILE__="captain/iomanager.cpp"

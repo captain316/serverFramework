@@ -59,6 +59,30 @@ CMakeFiles/captain.dir/captain/hook.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/thread.h
  /home/lk/gitRepo/serverFramework/captain/include/timer.h
  /home/lk/gitRepo/serverFramework/captain/include/util.h
+CMakeFiles/captain.dir/captain/http/http.cpp.o
+ /home/lk/gitRepo/serverFramework/captain/http/http.cpp
+ /home/lk/gitRepo/serverFramework/captain/http/http.h
+CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o
+ /home/lk/gitRepo/serverFramework/captain/http/http11_common.h
+ /home/lk/gitRepo/serverFramework/captain/http/http11_parser.h
+ /home/lk/gitRepo/serverFramework/captain/http/http11_parser.rl.cpp
+CMakeFiles/captain.dir/captain/http/http_parser.cpp.o
+ ../captain/include/config.h
+ ../captain/include/log.h
+ ../captain/include/noncopyable.h
+ ../captain/include/singleton.h
+ ../captain/include/thread.h
+ ../captain/include/util.h
+ /home/lk/gitRepo/serverFramework/captain/http/http.h
+ /home/lk/gitRepo/serverFramework/captain/http/http11_common.h
+ /home/lk/gitRepo/serverFramework/captain/http/http11_parser.h
+ /home/lk/gitRepo/serverFramework/captain/http/http_parser.cpp
+ /home/lk/gitRepo/serverFramework/captain/http/http_parser.h
+ /home/lk/gitRepo/serverFramework/captain/http/httpclient_parser.h
+CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o
+ /home/lk/gitRepo/serverFramework/captain/http/http11_common.h
+ /home/lk/gitRepo/serverFramework/captain/http/httpclient_parser.h
+ /home/lk/gitRepo/serverFramework/captain/http/httpclient_parser.rl.cpp
 CMakeFiles/captain.dir/captain/iomanager.cpp.o
  /home/lk/gitRepo/serverFramework/captain/include/fiber.h
  /home/lk/gitRepo/serverFramework/captain/include/iomanager.h
