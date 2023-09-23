@@ -36,6 +36,8 @@ CXX_INCLUDES = -I/home/lk/gitRepo/serverFramework/.
 
 # Custom defines: CMakeFiles/captain.dir/captain/socket.cpp.o_DEFINES = __FILE__="captain/socket.cpp"
 
+# Custom defines: CMakeFiles/captain.dir/captain/tcp_server.cpp.o_DEFINES = __FILE__="captain/tcp_server.cpp"
+
 # Custom defines: CMakeFiles/captain.dir/captain/thread.cpp.o_DEFINES = __FILE__="captain/thread.cpp"
 
 # Custom defines: CMakeFiles/captain.dir/captain/timer.cpp.o_DEFINES = __FILE__="captain/timer.cpp"

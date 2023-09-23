@@ -242,9 +242,22 @@ CMakeFiles/captain.dir/captain/socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/socket.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/socket.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/socket.cpp -o CMakeFiles/captain.dir/captain/socket.cpp.s
 
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: CMakeFiles/captain.dir/flags.make
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/tcp_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/captain.dir/captain/tcp_server.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/tcp_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/tcp_server.cpp.o -c /home/lk/gitRepo/serverFramework/captain/tcp_server.cpp
+
+CMakeFiles/captain.dir/captain/tcp_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/tcp_server.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/tcp_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/tcp_server.cpp > CMakeFiles/captain.dir/captain/tcp_server.cpp.i
+
+CMakeFiles/captain.dir/captain/tcp_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/tcp_server.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/tcp_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/tcp_server.cpp -o CMakeFiles/captain.dir/captain/tcp_server.cpp.s
+
 CMakeFiles/captain.dir/captain/thread.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/captain.dir/captain/thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/captain.dir/captain/thread.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/thread.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/thread.cpp.o -c /home/lk/gitRepo/serverFramework/captain/thread.cpp
 
 CMakeFiles/captain.dir/captain/thread.cpp.i: cmake_force
@@ -257,7 +270,7 @@ CMakeFiles/captain.dir/captain/thread.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/timer.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/timer.cpp.o: ../captain/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/captain.dir/captain/timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/captain.dir/captain/timer.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/timer.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/timer.cpp.o -c /home/lk/gitRepo/serverFramework/captain/timer.cpp
 
 CMakeFiles/captain.dir/captain/timer.cpp.i: cmake_force
@@ -270,7 +283,7 @@ CMakeFiles/captain.dir/captain/timer.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/util.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/util.cpp.o: ../captain/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/captain.dir/captain/util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/captain.dir/captain/util.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/util.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/util.cpp.o -c /home/lk/gitRepo/serverFramework/captain/util.cpp
 
 CMakeFiles/captain.dir/captain/util.cpp.i: cmake_force
@@ -297,6 +310,7 @@ captain_OBJECTS = \
 "CMakeFiles/captain.dir/captain/log.cpp.o" \
 "CMakeFiles/captain.dir/captain/scheduler.cpp.o" \
 "CMakeFiles/captain.dir/captain/socket.cpp.o" \
+"CMakeFiles/captain.dir/captain/tcp_server.cpp.o" \
 "CMakeFiles/captain.dir/captain/thread.cpp.o" \
 "CMakeFiles/captain.dir/captain/timer.cpp.o" \
 "CMakeFiles/captain.dir/captain/util.cpp.o"
@@ -318,12 +332,13 @@ captain_EXTERNAL_OBJECTS =
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/log.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/scheduler.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/socket.cpp.o
+../lib/libcaptain.so: CMakeFiles/captain.dir/captain/tcp_server.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/thread.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/timer.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/util.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/build.make
 ../lib/libcaptain.so: CMakeFiles/captain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX shared library ../lib/libcaptain.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX shared library ../lib/libcaptain.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/captain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

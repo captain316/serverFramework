@@ -1,5 +1,7 @@
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/rebuild_cache.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/edit_cache.dir
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/echo_server.dir
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/test_tcp_server.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_http_parser.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/captain.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_fiber.dir

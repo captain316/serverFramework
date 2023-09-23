@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/captain.dir/captain/log.cpp.o"
   "CMakeFiles/captain.dir/captain/scheduler.cpp.o"
   "CMakeFiles/captain.dir/captain/socket.cpp.o"
+  "CMakeFiles/captain.dir/captain/tcp_server.cpp.o"
   "CMakeFiles/captain.dir/captain/thread.cpp.o"
   "CMakeFiles/captain.dir/captain/timer.cpp.o"
   "CMakeFiles/captain.dir/captain/util.cpp.o"

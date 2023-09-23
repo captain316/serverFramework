@@ -130,6 +130,21 @@ CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/timer.h
 CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/util.h
 CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/socket.cpp
 
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/address.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/config.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/fiber.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/iomanager.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/log.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/noncopyable.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/scheduler.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/singleton.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/socket.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/tcp_server.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/thread.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/timer.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/util.h
+CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/tcp_server.cpp
+
 CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/include/log.h
 CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/include/noncopyable.h
 CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/include/singleton.h
