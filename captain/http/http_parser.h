@@ -1,10 +1,6 @@
 /**
  * @file http_parser.h
  * @brief HTTP协议解析封装
- * @author sylar.yin
- * @email 564628276@qq.com
- * @date 2019-06-11
- * @copyright Copyright (c) 2019年 sylar.yin All rights reserved (www.sylar.top)
  */
 
 #ifndef __CAPTAIN_HTTP_PARSER_H__

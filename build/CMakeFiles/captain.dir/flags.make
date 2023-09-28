@@ -22,6 +22,12 @@ CXX_INCLUDES = -I/home/lk/gitRepo/serverFramework/.
 
 # Custom defines: CMakeFiles/captain.dir/captain/http/http_parser.cpp.o_DEFINES = __FILE__="captain/http/http_parser.cpp"
 
+# Custom defines: CMakeFiles/captain.dir/captain/http/http_session.cpp.o_DEFINES = __FILE__="captain/http/http_session.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/http/http_server.cpp.o_DEFINES = __FILE__="captain/http/http_server.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/http/servlet.cpp.o_DEFINES = __FILE__="captain/http/servlet.cpp"
+
 # Custom defines: CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o_DEFINES = __FILE__="captain/http/http11_parser.rl.cpp"
 
 # Custom defines: CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o_DEFINES = __FILE__="captain/http/httpclient_parser.rl.cpp"
@@ -35,6 +41,10 @@ CXX_INCLUDES = -I/home/lk/gitRepo/serverFramework/.
 # Custom defines: CMakeFiles/captain.dir/captain/scheduler.cpp.o_DEFINES = __FILE__="captain/scheduler.cpp"
 
 # Custom defines: CMakeFiles/captain.dir/captain/socket.cpp.o_DEFINES = __FILE__="captain/socket.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/stream.cpp.o_DEFINES = __FILE__="captain/stream.cpp"
+
+# Custom defines: CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o_DEFINES = __FILE__="captain/streams/socket_stream.cpp"
 
 # Custom defines: CMakeFiles/captain.dir/captain/tcp_server.cpp.o_DEFINES = __FILE__="captain/tcp_server.cpp"
 

@@ -21,6 +21,9 @@ set(LIB_SRC
     captain/fiber.cpp
     captain/http/http.cpp
     captain/http/http_parser.cpp
+    captain/http/http_session.cpp
+    captain/http/http_server.cpp
+    captain/http/servlet.cpp
     captain/http/http11_parser.rl.cpp
     captain/http/httpclient_parser.rl.cpp
     captain/hook.cpp
@@ -28,6 +31,8 @@ set(LIB_SRC
     captain/log.cpp
     captain/scheduler.cpp
     captain/socket.cpp
+    captain/stream.cpp
+    captain/streams/socket_stream.cpp
     captain/tcp_server.cpp
     captain/thread.cpp
     captain/timer.cpp
@@ -119,6 +124,11 @@ add_executable(echo_server examples/echo_server.cpp)
 add_dependencies(echo_server captain)
 force_redefine_file_macro_for_sources(echo_server) #__FILE__
 target_link_libraries(echo_server ${LIBS})
+
+add_executable(test_http_server tests/test_http_server.cpp)
+add_dependencies(test_http_server captain)
+force_redefine_file_macro_for_sources(test_http_server) #__FILE__
+target_link_libraries(test_http_server ${LIBS})
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

@@ -79,9 +79,67 @@ CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/http/http_pars
 CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/http/http_parser.h
 CMakeFiles/captain.dir/captain/http/http_parser.cpp.o: ../captain/http/httpclient_parser.h
 
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/address.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/bytearray.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/config.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/fiber.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/iomanager.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/log.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/noncopyable.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/scheduler.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/singleton.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/socket.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/stream.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/tcp_server.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/thread.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/timer.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/include/util.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/streams/socket_stream.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/http/http.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/http/http_server.cpp
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/http/http_server.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/http/http_session.h
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/http/servlet.h
+
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/include/address.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/include/bytearray.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/include/fiber.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/include/iomanager.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/include/noncopyable.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/include/scheduler.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/include/socket.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/include/stream.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/include/thread.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/include/timer.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/streams/socket_stream.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/http/http.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/http/http11_common.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/http/http11_parser.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/http/http_parser.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/http/http_session.cpp
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/http/http_session.h
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/http/httpclient_parser.h
+
 CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o: ../captain/http/http11_common.h
 CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o: ../captain/http/httpclient_parser.h
 CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o: ../captain/http/httpclient_parser.rl.cpp
+
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/address.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/bytearray.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/fiber.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/iomanager.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/noncopyable.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/scheduler.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/socket.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/stream.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/thread.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/timer.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/include/util.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/streams/socket_stream.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/http/http.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/http/http_session.h
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/http/servlet.cpp
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/http/servlet.h
 
 CMakeFiles/captain.dir/captain/iomanager.cpp.o: ../captain/include/fiber.h
 CMakeFiles/captain.dir/captain/iomanager.cpp.o: ../captain/include/iomanager.h
@@ -129,6 +187,24 @@ CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/thread.h
 CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/timer.h
 CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/include/util.h
 CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/socket.cpp
+
+CMakeFiles/captain.dir/captain/stream.cpp.o: ../captain/include/bytearray.h
+CMakeFiles/captain.dir/captain/stream.cpp.o: ../captain/include/stream.h
+CMakeFiles/captain.dir/captain/stream.cpp.o: ../captain/stream.cpp
+
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/address.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/bytearray.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/fiber.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/iomanager.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/noncopyable.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/scheduler.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/socket.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/stream.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/thread.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/timer.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/include/util.h
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/streams/socket_stream.cpp
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/streams/socket_stream.h
 
 CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/address.h
 CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/include/config.h

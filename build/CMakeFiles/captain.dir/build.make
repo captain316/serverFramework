@@ -151,9 +151,48 @@ CMakeFiles/captain.dir/captain/http/http_parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/http/http_parser.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/http/http_parser.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/http/http_parser.cpp -o CMakeFiles/captain.dir/captain/http/http_parser.cpp.s
 
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: CMakeFiles/captain.dir/flags.make
+CMakeFiles/captain.dir/captain/http/http_session.cpp.o: ../captain/http/http_session.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/captain.dir/captain/http/http_session.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/http/http_session.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/http/http_session.cpp.o -c /home/lk/gitRepo/serverFramework/captain/http/http_session.cpp
+
+CMakeFiles/captain.dir/captain/http/http_session.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/http/http_session.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/http/http_session.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/http/http_session.cpp > CMakeFiles/captain.dir/captain/http/http_session.cpp.i
+
+CMakeFiles/captain.dir/captain/http/http_session.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/http/http_session.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/http/http_session.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/http/http_session.cpp -o CMakeFiles/captain.dir/captain/http/http_session.cpp.s
+
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: CMakeFiles/captain.dir/flags.make
+CMakeFiles/captain.dir/captain/http/http_server.cpp.o: ../captain/http/http_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/captain.dir/captain/http/http_server.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/http/http_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/http/http_server.cpp.o -c /home/lk/gitRepo/serverFramework/captain/http/http_server.cpp
+
+CMakeFiles/captain.dir/captain/http/http_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/http/http_server.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/http/http_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/http/http_server.cpp > CMakeFiles/captain.dir/captain/http/http_server.cpp.i
+
+CMakeFiles/captain.dir/captain/http/http_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/http/http_server.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/http/http_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/http/http_server.cpp -o CMakeFiles/captain.dir/captain/http/http_server.cpp.s
+
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: CMakeFiles/captain.dir/flags.make
+CMakeFiles/captain.dir/captain/http/servlet.cpp.o: ../captain/http/servlet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/captain.dir/captain/http/servlet.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/http/servlet.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/http/servlet.cpp.o -c /home/lk/gitRepo/serverFramework/captain/http/servlet.cpp
+
+CMakeFiles/captain.dir/captain/http/servlet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/http/servlet.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/http/servlet.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/http/servlet.cpp > CMakeFiles/captain.dir/captain/http/servlet.cpp.i
+
+CMakeFiles/captain.dir/captain/http/servlet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/http/servlet.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/http/servlet.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/http/servlet.cpp -o CMakeFiles/captain.dir/captain/http/servlet.cpp.s
+
 CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o: ../captain/http/http11_parser.rl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/http/http11_parser.rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o -c /home/lk/gitRepo/serverFramework/captain/http/http11_parser.rl.cpp
 
 CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.i: cmake_force
@@ -166,7 +205,7 @@ CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o: ../captain/http/httpclient_parser.rl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/http/httpclient_parser.rl.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o -c /home/lk/gitRepo/serverFramework/captain/http/httpclient_parser.rl.cpp
 
 CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.i: cmake_force
@@ -179,7 +218,7 @@ CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/hook.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/hook.cpp.o: ../captain/hook.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/captain.dir/captain/hook.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/captain.dir/captain/hook.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/hook.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/hook.cpp.o -c /home/lk/gitRepo/serverFramework/captain/hook.cpp
 
 CMakeFiles/captain.dir/captain/hook.cpp.i: cmake_force
@@ -192,7 +231,7 @@ CMakeFiles/captain.dir/captain/hook.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/iomanager.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/iomanager.cpp.o: ../captain/iomanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/captain.dir/captain/iomanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/captain.dir/captain/iomanager.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/iomanager.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/iomanager.cpp.o -c /home/lk/gitRepo/serverFramework/captain/iomanager.cpp
 
 CMakeFiles/captain.dir/captain/iomanager.cpp.i: cmake_force
@@ -205,7 +244,7 @@ CMakeFiles/captain.dir/captain/iomanager.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/log.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/log.cpp.o: ../captain/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/captain.dir/captain/log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/captain.dir/captain/log.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/log.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/log.cpp.o -c /home/lk/gitRepo/serverFramework/captain/log.cpp
 
 CMakeFiles/captain.dir/captain/log.cpp.i: cmake_force
@@ -218,7 +257,7 @@ CMakeFiles/captain.dir/captain/log.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/scheduler.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/scheduler.cpp.o: ../captain/scheduler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/captain.dir/captain/scheduler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/captain.dir/captain/scheduler.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/scheduler.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/scheduler.cpp.o -c /home/lk/gitRepo/serverFramework/captain/scheduler.cpp
 
 CMakeFiles/captain.dir/captain/scheduler.cpp.i: cmake_force
@@ -231,7 +270,7 @@ CMakeFiles/captain.dir/captain/scheduler.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/socket.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/socket.cpp.o: ../captain/socket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/captain.dir/captain/socket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/captain.dir/captain/socket.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/socket.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/socket.cpp.o -c /home/lk/gitRepo/serverFramework/captain/socket.cpp
 
 CMakeFiles/captain.dir/captain/socket.cpp.i: cmake_force
@@ -242,9 +281,35 @@ CMakeFiles/captain.dir/captain/socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/socket.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/socket.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/socket.cpp -o CMakeFiles/captain.dir/captain/socket.cpp.s
 
+CMakeFiles/captain.dir/captain/stream.cpp.o: CMakeFiles/captain.dir/flags.make
+CMakeFiles/captain.dir/captain/stream.cpp.o: ../captain/stream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/captain.dir/captain/stream.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/stream.cpp.o -c /home/lk/gitRepo/serverFramework/captain/stream.cpp
+
+CMakeFiles/captain.dir/captain/stream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/stream.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/stream.cpp > CMakeFiles/captain.dir/captain/stream.cpp.i
+
+CMakeFiles/captain.dir/captain/stream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/stream.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/stream.cpp -o CMakeFiles/captain.dir/captain/stream.cpp.s
+
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: CMakeFiles/captain.dir/flags.make
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o: ../captain/streams/socket_stream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/streams/socket_stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o -c /home/lk/gitRepo/serverFramework/captain/streams/socket_stream.cpp
+
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/streams/socket_stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lk/gitRepo/serverFramework/captain/streams/socket_stream.cpp > CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.i
+
+CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) -D__FILE__=\"captain/streams/socket_stream.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lk/gitRepo/serverFramework/captain/streams/socket_stream.cpp -o CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.s
+
 CMakeFiles/captain.dir/captain/tcp_server.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/tcp_server.cpp.o: ../captain/tcp_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/captain.dir/captain/tcp_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/captain.dir/captain/tcp_server.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/tcp_server.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/tcp_server.cpp.o -c /home/lk/gitRepo/serverFramework/captain/tcp_server.cpp
 
 CMakeFiles/captain.dir/captain/tcp_server.cpp.i: cmake_force
@@ -257,7 +322,7 @@ CMakeFiles/captain.dir/captain/tcp_server.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/thread.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/thread.cpp.o: ../captain/thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/captain.dir/captain/thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/captain.dir/captain/thread.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/thread.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/thread.cpp.o -c /home/lk/gitRepo/serverFramework/captain/thread.cpp
 
 CMakeFiles/captain.dir/captain/thread.cpp.i: cmake_force
@@ -270,7 +335,7 @@ CMakeFiles/captain.dir/captain/thread.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/timer.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/timer.cpp.o: ../captain/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/captain.dir/captain/timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/captain.dir/captain/timer.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/timer.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/timer.cpp.o -c /home/lk/gitRepo/serverFramework/captain/timer.cpp
 
 CMakeFiles/captain.dir/captain/timer.cpp.i: cmake_force
@@ -283,7 +348,7 @@ CMakeFiles/captain.dir/captain/timer.cpp.s: cmake_force
 
 CMakeFiles/captain.dir/captain/util.cpp.o: CMakeFiles/captain.dir/flags.make
 CMakeFiles/captain.dir/captain/util.cpp.o: ../captain/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/captain.dir/captain/util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/captain.dir/captain/util.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) -D__FILE__=\"captain/util.cpp\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/captain.dir/captain/util.cpp.o -c /home/lk/gitRepo/serverFramework/captain/util.cpp
 
 CMakeFiles/captain.dir/captain/util.cpp.i: cmake_force
@@ -303,6 +368,9 @@ captain_OBJECTS = \
 "CMakeFiles/captain.dir/captain/fiber.cpp.o" \
 "CMakeFiles/captain.dir/captain/http/http.cpp.o" \
 "CMakeFiles/captain.dir/captain/http/http_parser.cpp.o" \
+"CMakeFiles/captain.dir/captain/http/http_session.cpp.o" \
+"CMakeFiles/captain.dir/captain/http/http_server.cpp.o" \
+"CMakeFiles/captain.dir/captain/http/servlet.cpp.o" \
 "CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o" \
 "CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o" \
 "CMakeFiles/captain.dir/captain/hook.cpp.o" \
@@ -310,6 +378,8 @@ captain_OBJECTS = \
 "CMakeFiles/captain.dir/captain/log.cpp.o" \
 "CMakeFiles/captain.dir/captain/scheduler.cpp.o" \
 "CMakeFiles/captain.dir/captain/socket.cpp.o" \
+"CMakeFiles/captain.dir/captain/stream.cpp.o" \
+"CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o" \
 "CMakeFiles/captain.dir/captain/tcp_server.cpp.o" \
 "CMakeFiles/captain.dir/captain/thread.cpp.o" \
 "CMakeFiles/captain.dir/captain/timer.cpp.o" \
@@ -325,6 +395,9 @@ captain_EXTERNAL_OBJECTS =
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/fiber.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/http/http.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/http/http_parser.cpp.o
+../lib/libcaptain.so: CMakeFiles/captain.dir/captain/http/http_session.cpp.o
+../lib/libcaptain.so: CMakeFiles/captain.dir/captain/http/http_server.cpp.o
+../lib/libcaptain.so: CMakeFiles/captain.dir/captain/http/servlet.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/http/http11_parser.rl.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/hook.cpp.o
@@ -332,13 +405,15 @@ captain_EXTERNAL_OBJECTS =
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/log.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/scheduler.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/socket.cpp.o
+../lib/libcaptain.so: CMakeFiles/captain.dir/captain/stream.cpp.o
+../lib/libcaptain.so: CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/tcp_server.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/thread.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/timer.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/captain/util.cpp.o
 ../lib/libcaptain.so: CMakeFiles/captain.dir/build.make
 ../lib/libcaptain.so: CMakeFiles/captain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX shared library ../lib/libcaptain.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lk/gitRepo/serverFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX shared library ../lib/libcaptain.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/captain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

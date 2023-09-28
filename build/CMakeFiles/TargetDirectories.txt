@@ -5,6 +5,7 @@
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_http_parser.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/captain.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_fiber.dir
+/home/lk/gitRepo/serverFramework/build/CMakeFiles/test_http_server.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_address.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test.dir
 /home/lk/gitRepo/serverFramework/build/CMakeFiles/test_thread.dir

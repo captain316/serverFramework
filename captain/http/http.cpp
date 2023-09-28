@@ -268,12 +268,21 @@ std::ostream& HttpResponse::dump(std::ostream& os) const {
 
     if(!m_body.empty()) {
         // 如果响应包含消息体，输出消息体长度
-        os << "content-length: " << m_body.size() << "\r\n\r\n";
+        os << "content-length: " << m_body.size() << "\r\n\r\n"
+        << m_body;
     } else {
         // 如果没有消息体，只输出一个空行表示头部字段结束
         os << "\r\n";
     }
     return os;
+}
+
+std::ostream& operator<<(std::ostream& os, const HttpRequest& req) {
+    return req.dump(os);
+}
+
+std::ostream& operator<<(std::ostream& os, const HttpResponse& rsp) {
+    return rsp.dump(os);
 }
 
 }

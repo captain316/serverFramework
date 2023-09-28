@@ -179,6 +179,19 @@ test_fiber/fast:
 .PHONY : test_fiber/fast
 
 #=============================================================================
+# Target rules for targets named test_http_server
+
+# Build rule for target.
+test_http_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_http_server
+.PHONY : test_http_server
+
+# fast build rule for target.
+test_http_server/fast:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/build
+.PHONY : test_http_server/fast
+
+#=============================================================================
 # Target rules for targets named test_address
 
 # Build rule for target.
@@ -564,6 +577,60 @@ captain/http/http_parser.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/http_parser.cpp.s
 .PHONY : captain/http/http_parser.cpp.s
 
+captain/http/http_server.o: captain/http/http_server.cpp.o
+
+.PHONY : captain/http/http_server.o
+
+# target to build an object file
+captain/http/http_server.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/http_server.cpp.o
+.PHONY : captain/http/http_server.cpp.o
+
+captain/http/http_server.i: captain/http/http_server.cpp.i
+
+.PHONY : captain/http/http_server.i
+
+# target to preprocess a source file
+captain/http/http_server.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/http_server.cpp.i
+.PHONY : captain/http/http_server.cpp.i
+
+captain/http/http_server.s: captain/http/http_server.cpp.s
+
+.PHONY : captain/http/http_server.s
+
+# target to generate assembly for a file
+captain/http/http_server.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/http_server.cpp.s
+.PHONY : captain/http/http_server.cpp.s
+
+captain/http/http_session.o: captain/http/http_session.cpp.o
+
+.PHONY : captain/http/http_session.o
+
+# target to build an object file
+captain/http/http_session.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/http_session.cpp.o
+.PHONY : captain/http/http_session.cpp.o
+
+captain/http/http_session.i: captain/http/http_session.cpp.i
+
+.PHONY : captain/http/http_session.i
+
+# target to preprocess a source file
+captain/http/http_session.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/http_session.cpp.i
+.PHONY : captain/http/http_session.cpp.i
+
+captain/http/http_session.s: captain/http/http_session.cpp.s
+
+.PHONY : captain/http/http_session.s
+
+# target to generate assembly for a file
+captain/http/http_session.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/http_session.cpp.s
+.PHONY : captain/http/http_session.cpp.s
+
 captain/http/httpclient_parser.rl.o: captain/http/httpclient_parser.rl.cpp.o
 
 .PHONY : captain/http/httpclient_parser.rl.o
@@ -590,6 +657,33 @@ captain/http/httpclient_parser.rl.s: captain/http/httpclient_parser.rl.cpp.s
 captain/http/httpclient_parser.rl.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/httpclient_parser.rl.cpp.s
 .PHONY : captain/http/httpclient_parser.rl.cpp.s
+
+captain/http/servlet.o: captain/http/servlet.cpp.o
+
+.PHONY : captain/http/servlet.o
+
+# target to build an object file
+captain/http/servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/servlet.cpp.o
+.PHONY : captain/http/servlet.cpp.o
+
+captain/http/servlet.i: captain/http/servlet.cpp.i
+
+.PHONY : captain/http/servlet.i
+
+# target to preprocess a source file
+captain/http/servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/servlet.cpp.i
+.PHONY : captain/http/servlet.cpp.i
+
+captain/http/servlet.s: captain/http/servlet.cpp.s
+
+.PHONY : captain/http/servlet.s
+
+# target to generate assembly for a file
+captain/http/servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/http/servlet.cpp.s
+.PHONY : captain/http/servlet.cpp.s
 
 captain/iomanager.o: captain/iomanager.cpp.o
 
@@ -698,6 +792,60 @@ captain/socket.s: captain/socket.cpp.s
 captain/socket.cpp.s:
 	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/socket.cpp.s
 .PHONY : captain/socket.cpp.s
+
+captain/stream.o: captain/stream.cpp.o
+
+.PHONY : captain/stream.o
+
+# target to build an object file
+captain/stream.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/stream.cpp.o
+.PHONY : captain/stream.cpp.o
+
+captain/stream.i: captain/stream.cpp.i
+
+.PHONY : captain/stream.i
+
+# target to preprocess a source file
+captain/stream.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/stream.cpp.i
+.PHONY : captain/stream.cpp.i
+
+captain/stream.s: captain/stream.cpp.s
+
+.PHONY : captain/stream.s
+
+# target to generate assembly for a file
+captain/stream.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/stream.cpp.s
+.PHONY : captain/stream.cpp.s
+
+captain/streams/socket_stream.o: captain/streams/socket_stream.cpp.o
+
+.PHONY : captain/streams/socket_stream.o
+
+# target to build an object file
+captain/streams/socket_stream.cpp.o:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.o
+.PHONY : captain/streams/socket_stream.cpp.o
+
+captain/streams/socket_stream.i: captain/streams/socket_stream.cpp.i
+
+.PHONY : captain/streams/socket_stream.i
+
+# target to preprocess a source file
+captain/streams/socket_stream.cpp.i:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.i
+.PHONY : captain/streams/socket_stream.cpp.i
+
+captain/streams/socket_stream.s: captain/streams/socket_stream.cpp.s
+
+.PHONY : captain/streams/socket_stream.s
+
+# target to generate assembly for a file
+captain/streams/socket_stream.cpp.s:
+	$(MAKE) -f CMakeFiles/captain.dir/build.make CMakeFiles/captain.dir/captain/streams/socket_stream.cpp.s
+.PHONY : captain/streams/socket_stream.cpp.s
 
 captain/tcp_server.o: captain/tcp_server.cpp.o
 
@@ -1050,6 +1198,33 @@ tests/test_http_parser.cpp.s:
 	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.s
 .PHONY : tests/test_http_parser.cpp.s
 
+tests/test_http_server.o: tests/test_http_server.cpp.o
+
+.PHONY : tests/test_http_server.o
+
+# target to build an object file
+tests/test_http_server.cpp.o:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cpp.o
+.PHONY : tests/test_http_server.cpp.o
+
+tests/test_http_server.i: tests/test_http_server.cpp.i
+
+.PHONY : tests/test_http_server.i
+
+# target to preprocess a source file
+tests/test_http_server.cpp.i:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cpp.i
+.PHONY : tests/test_http_server.cpp.i
+
+tests/test_http_server.s: tests/test_http_server.cpp.s
+
+.PHONY : tests/test_http_server.s
+
+# target to generate assembly for a file
+tests/test_http_server.cpp.s:
+	$(MAKE) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cpp.s
+.PHONY : tests/test_http_server.cpp.s
+
 tests/test_iomanager.o: tests/test_iomanager.cpp.o
 
 .PHONY : tests/test_iomanager.o
@@ -1225,6 +1400,7 @@ help:
 	@echo "... test_http_parser"
 	@echo "... captain"
 	@echo "... test_fiber"
+	@echo "... test_http_server"
 	@echo "... test_address"
 	@echo "... test"
 	@echo "... test_thread"
@@ -1263,9 +1439,18 @@ help:
 	@echo "... captain/http/http_parser.o"
 	@echo "... captain/http/http_parser.i"
 	@echo "... captain/http/http_parser.s"
+	@echo "... captain/http/http_server.o"
+	@echo "... captain/http/http_server.i"
+	@echo "... captain/http/http_server.s"
+	@echo "... captain/http/http_session.o"
+	@echo "... captain/http/http_session.i"
+	@echo "... captain/http/http_session.s"
 	@echo "... captain/http/httpclient_parser.rl.o"
 	@echo "... captain/http/httpclient_parser.rl.i"
 	@echo "... captain/http/httpclient_parser.rl.s"
+	@echo "... captain/http/servlet.o"
+	@echo "... captain/http/servlet.i"
+	@echo "... captain/http/servlet.s"
 	@echo "... captain/iomanager.o"
 	@echo "... captain/iomanager.i"
 	@echo "... captain/iomanager.s"
@@ -1278,6 +1463,12 @@ help:
 	@echo "... captain/socket.o"
 	@echo "... captain/socket.i"
 	@echo "... captain/socket.s"
+	@echo "... captain/stream.o"
+	@echo "... captain/stream.i"
+	@echo "... captain/stream.s"
+	@echo "... captain/streams/socket_stream.o"
+	@echo "... captain/streams/socket_stream.i"
+	@echo "... captain/streams/socket_stream.s"
 	@echo "... captain/tcp_server.o"
 	@echo "... captain/tcp_server.i"
 	@echo "... captain/tcp_server.s"
@@ -1317,6 +1508,9 @@ help:
 	@echo "... tests/test_http_parser.o"
 	@echo "... tests/test_http_parser.i"
 	@echo "... tests/test_http_parser.s"
+	@echo "... tests/test_http_server.o"
+	@echo "... tests/test_http_server.i"
+	@echo "... tests/test_http_server.s"
 	@echo "... tests/test_iomanager.o"
 	@echo "... tests/test_iomanager.i"
 	@echo "... tests/test_iomanager.s"

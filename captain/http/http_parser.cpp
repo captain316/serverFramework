@@ -159,7 +159,7 @@ void on_request_http_field(void *data, const char *field, size_t flen
     //如果长度为零，这被认为是一个无效的 HTTP 请求字段
     if(flen == 0) {
         CAPTAIN_LOG_WARN(g_logger) << "invalid http request field length == 0";
-        parser->setError(1002);
+        //parser->setError(1002);
         return;
     }
     parser->getData()->setHeader(std::string(field, flen)
@@ -253,7 +253,7 @@ void on_response_http_field(void *data, const char *field, size_t flen
     HttpResponseParser* parser = static_cast<HttpResponseParser*>(data);
     if(flen == 0) {
         CAPTAIN_LOG_WARN(g_logger) << "invalid http response field length == 0";
-        parser->setError(1002);
+        //parser->setError(1002);
         return;
     }
     parser->getData()->setHeader(std::string(field, flen)
